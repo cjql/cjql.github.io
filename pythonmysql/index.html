@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
@@ -123,11 +123,11 @@
 
         
             <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
             <i class="fa fa-times" onclick="resetSearch()"></i>
             </form>
             <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -255,7 +255,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-pythonmysql" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-pythonmysql" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
         <a href="/pythonmysql/" class="article-date">
@@ -267,7 +267,7 @@
     
     <div class="article-inner">
       
-        <input type="hidden" class="isFancy" />
+        <input type="hidden" class="isFancy">
       
       
         <header class="article-header">
@@ -296,27 +296,23 @@
         
         
             
-          <p>开始学习python的mysql连接。</p>
-<a id="more"></a>
+          <p>开始学习python的mysql连接。<br><a id="more"></a></p>
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><blockquote>
 <ul>
 <li><a href="https://www.apachefriends.org/zh_cn/index.html" target="_blank" rel="noopener">xampp</a></li>
-</ul>
-</blockquote>
-<ul>
 <li><code>pip install pymysql --user</code></li>
 <li>/xampp/phpMyadmin，打开config.inc.php文件，查看MySQL配置的用户和密码</li>
 </ul>
+</blockquote>
 <p>参考教程：</p>
 <blockquote>
 <ul>
 <li>菜鸟教程：<a href="http://www.runoob.com/python3/python3-mysql.html" target="_blank" rel="noopener">mysql</a> 、<a href="http://www.runoob.com/python3/python-mysql-connector.html" target="_blank" rel="noopener">mysql-connector</a></li>
-</ul>
-</blockquote>
-<ul>
 <li><a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-internals.html" target="_blank" rel="noopener">MySQL官方文档</a></li>
 </ul>
-<h1 id><a href="#" class="headerlink" title></a></h1><h1 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h1><p>DB API中定义了一些数据库操作的错误及异常，下表列出了这些错误和异常:</p>
+</blockquote>
+<p># </p>
+<h1 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h1><p>DB API中定义了一些数据库操作的错误及异常，下表列出了这些错误和异常:</p>
 <table>
 <thead>
 <tr>
@@ -324,7 +320,8 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Warning</td>
 <td>当有严重警告时触发，例如插入数据是被截断等等。必须是 StandardError 的子类。</td>
 </tr>
@@ -364,8 +361,9 @@
 <td>NotSupportedError</td>
 <td>不支持错误，指使用了数据库不支持的函数或API等。例如在连接对象上 使用.rollback()函数，然而数据库并不支持事务或者事务已关闭。 必须是DatabaseError的子类。</td>
 </tr>
-</tbody></table>
-<h3 id="OperationalError-1045-“Access-denied-for-user-‘testuser’-’localhost’-using-password-YES-”"><a href="#OperationalError-1045-“Access-denied-for-user-‘testuser’-’localhost’-using-password-YES-”" class="headerlink" title="OperationalError: (1045, “Access denied for user ‘testuser’@’localhost’ (using password: YES)”)"></a>OperationalError: (1045, “Access denied for user ‘testuser’@’localhost’ (using password: YES)”)</h3><p>数据库连接错误，如何添加密码</p>
+</tbody>
+</table>
+<h3 id="OperationalError-1045-“Access-denied-for-user-‘testuser‘-’localhost’-using-password-YES-”"><a href="#OperationalError-1045-“Access-denied-for-user-‘testuser‘-’localhost’-using-password-YES-”" class="headerlink" title="OperationalError: (1045, “Access denied for user ‘testuser‘@’localhost’ (using password: YES)”)"></a>OperationalError: (1045, “Access denied for user ‘testuser‘@’localhost’ (using password: YES)”)</h3><p>数据库连接错误，如何添加密码</p>
 
         
       </div>
@@ -381,9 +379,9 @@
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/pythonmysql.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/pythonmysql.md" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/pythonmysql.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/pythonmysql.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/pythonmysql.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/pythonmysql.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
             </p>
         
         <p>
@@ -392,7 +390,7 @@
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -425,7 +423,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">2.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#错误处理"><span class="toc-number">3.</span> <span class="toc-text">错误处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OperationalError-1045-“Access-denied-for-user-‘testuser’-’localhost’-using-password-YES-”"><span class="toc-number">3.0.1.</span> <span class="toc-text">OperationalError: (1045, “Access denied for user ‘testuser’@’localhost’ (using password: YES)”)</span></a></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#错误处理"><span class="toc-number">2.</span> <span class="toc-text">错误处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OperationalError-1045-“Access-denied-for-user-‘testuser‘-’localhost’-using-password-YES-”"><span class="toc-number">2.0.1.</span> <span class="toc-text">OperationalError: (1045, “Access denied for user ‘testuser‘@’localhost’ (using password: YES)”)</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -439,7 +437,7 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
 
     <script>
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
@@ -487,12 +485,12 @@
             </div>
             <div class="footer-right">
                 Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
-            </div>
+            </span></div>
         </div>
         
             <div class="visit">
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
+                    <span id="busuanzi_container_site_pv" style="display:none">
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -501,8 +499,8 @@
                     <span>| </span>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 

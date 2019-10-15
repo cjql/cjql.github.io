@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
@@ -123,11 +123,11 @@
 
         
             <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
             <i class="fa fa-times" onclick="resetSearch()"></i>
             </form>
             <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -255,7 +255,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-jupyter" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-jupyter" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
         <a href="/jupyter/" class="article-date">
@@ -267,7 +267,7 @@
     
     <div class="article-inner">
       
-        <input type="hidden" class="isFancy" />
+        <input type="hidden" class="isFancy">
       
       
         <header class="article-header">
@@ -296,14 +296,11 @@
         
         
             
-          <p>jupyter命令一览。</p>
-<a id="more"></a>
+          <p>jupyter命令一览。<br><a id="more"></a></p>
 <h1 id="新习"><a href="#新习" class="headerlink" title="新习"></a>新习</h1><h2 id="2018年12月13日"><a href="#2018年12月13日" class="headerlink" title="2018年12月13日"></a>2018年12月13日</h2><h3 id="jupyter-输出去掉-n"><a href="#jupyter-输出去掉-n" class="headerlink" title="jupyter 输出去掉 \n"></a>jupyter 输出去掉 <code>\n</code></h3><p>要 <code>print</code> 才出效果<br><a href="https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook" target="_blank" rel="noopener">https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook</a></p>
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="官方网站"><a href="#官方网站" class="headerlink" title="官方网站"></a>官方网站</h2><p><a href="http://jupyter.org/install" target="_blank" rel="noopener">官方网站</a> </p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>pip install jupyter --user</code> 安装<br><code>jupyter notebook</code> 进入笔记本</p>
-<h2 id="修改默认路径和浏览器"><a href="#修改默认路径和浏览器" class="headerlink" title="修改默认路径和浏览器"></a>修改默认路径和浏览器</h2><p>Windows默认在chrome里面打开：<br>1.命令行：jupyter notebook –generate-config<br>2.打开文件：jupyter_notebook_config.py<br>3.在文件头部添加:</p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line">webbrowser.register(<span class="string">'chrome'</span>, <span class="literal">None</span>, webbrowser.GenericBrowser(<span class="string">u'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'</span>))</span><br><span class="line">c.NotebookApp.browser = <span class="string">'chrome'</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="修改默认路径和浏览器"><a href="#修改默认路径和浏览器" class="headerlink" title="修改默认路径和浏览器"></a>修改默认路径和浏览器</h2><p>Windows默认在chrome里面打开：<br>1.命令行：jupyter notebook –generate-config<br>2.打开文件：jupyter_notebook_config.py<br>3.在文件头部添加:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line">webbrowser.register(<span class="string">'chrome'</span>, <span class="keyword">None</span>, webbrowser.GenericBrowser(<span class="string">u'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'</span>))</span><br><span class="line">c.NotebookApp.browser = <span class="string">'chrome'</span></span><br></pre></td></tr></table></figure></p>
 <p>路径需要酌情调整。</p>
 <h1 id="在nbviewer中查看"><a href="#在nbviewer中查看" class="headerlink" title="在nbviewer中查看"></a>在nbviewer中查看</h1><p>github文件的网址中把<code>https://github.com</code> 替换为<code>https://nbviewer.jupyter.org/github</code> 。<br>注意斜线个数。<a href="https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/MySQL.ipynb" target="_blank" rel="noopener">典型示例</a>：<code>https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/MySQL.ipynb</code><br><a href="http://nbviewer.jupyter.org/faq" target="_blank" rel="noopener">官方网站</a></p>
 <h1 id="格式转换-html、md、pdf、letex"><a href="#格式转换-html、md、pdf、letex" class="headerlink" title="格式转换: html、md、pdf、letex"></a>格式转换: html、md、pdf、letex</h1><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://cloud.tencent.com/developer/article/1008571" target="_blank" rel="noopener">格式转换</a></p>
@@ -315,7 +312,8 @@
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>jupyter nbconvert –to html notebook.ipynb</td>
 <td>ipynb转为html格式</td>
 </tr>
@@ -355,7 +353,8 @@
 <td>sudo apt-get install texlive-full</td>
 <td>方法是安装texLive套装，texlive-full的安装包有点大，约1G多。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <h2 id="面板式"><a href="#面板式" class="headerlink" title="面板式"></a>面板式</h2><p>ipynb转换为html、md、pdf等格式，还有另一种更简单的方法：在jupyter notebook中，选择<code>File-&gt;Download as</code>，直接选择需要转换的格式就可以了。需要注意的是，转换为pdf格式之前，同样要保证已经安装了xelatex。</p>
 
         
@@ -372,9 +371,9 @@
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/jupyter.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/jupyter.md" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/jupyter.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/jupyter.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/jupyter.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/jupyter.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
             </p>
         
         <p>
@@ -383,7 +382,7 @@
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -430,7 +429,7 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
 
     <script>
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
@@ -478,12 +477,12 @@
             </div>
             <div class="footer-right">
                 Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
-            </div>
+            </span></div>
         </div>
         
             <div class="visit">
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
+                    <span id="busuanzi_container_site_pv" style="display:none">
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -492,8 +491,8 @@
                     <span>| </span>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 

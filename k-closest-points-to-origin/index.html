@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
@@ -123,11 +123,11 @@
 
         
             <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
             <i class="fa fa-times" onclick="resetSearch()"></i>
             </form>
             <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -255,7 +255,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-k-closest-points-to-origin" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-k-closest-points-to-origin" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
         <a href="/k-closest-points-to-origin/" class="article-date">
@@ -267,7 +267,7 @@
     
     <div class="article-inner">
       
-        <input type="hidden" class="isFancy" />
+        <input type="hidden" class="isFancy">
       
       
         <header class="article-header">
@@ -297,11 +297,8 @@
         
             
           <h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>一系列二维坐标值放入列表中，求出K个离原点最近的坐标值。<br>k-closest-points-to-origin <a href="https://leetcode.com/problems/k-closest-points-to-origin/" target="_blank" rel="noopener">英文</a> <a href="https://leetcode-cn.com/problems/k-closest-points-to-origin/" target="_blank" rel="noopener">中文</a></p>
-<h2 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h2><p>1.多维下的sort<br>2.lambda的用法<br>3.列表的切片</p>
-<a id="more"></a>
-
+<h2 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h2><p>1.多维下的sort<br>2.lambda的用法<br>3.列表的切片<br><a id="more"></a></p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">kClosest</span><span class="params">(self, points, K)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type points: List[List[int]]</span></span><br><span class="line"><span class="string">        :type K: int</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        points.sort(key = <span class="keyword">lambda</span> P:P[<span class="number">0</span>]**<span class="number">2</span> + P[<span class="number">1</span>]**<span class="number">2</span>)</span><br><span class="line">        <span class="keyword">return</span> points[:K]</span><br></pre></td></tr></table></figure>
-
 
         
       </div>
@@ -317,9 +314,9 @@
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/k-closest-points-to-origin.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/k-closest-points-to-origin.md" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/k-closest-points-to-origin.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/k-closest-points-to-origin.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/k-closest-points-to-origin.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/k-closest-points-to-origin.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
             </p>
         
         <p>
@@ -328,7 +325,7 @@
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -375,7 +372,7 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
 
     <script>
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
@@ -423,12 +420,12 @@
             </div>
             <div class="footer-right">
                 Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
-            </div>
+            </span></div>
         </div>
         
             <div class="visit">
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
+                    <span id="busuanzi_container_site_pv" style="display:none">
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -437,8 +434,8 @@
                     <span>| </span>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 

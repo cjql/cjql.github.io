@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
@@ -123,11 +123,11 @@
 
         
             <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
             <i class="fa fa-times" onclick="resetSearch()"></i>
             </form>
             <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -255,7 +255,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-爬虫与反爬" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-爬虫与反爬" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
         <a href="/爬虫与反爬/" class="article-date">
@@ -267,7 +267,7 @@
     
     <div class="article-inner">
       
-        <input type="hidden" class="isFancy" />
+        <input type="hidden" class="isFancy">
       
       
         <header class="article-header">
@@ -296,8 +296,7 @@
         
         
             
-          <p>出书的人和经验丰富的实战工程师区别大概就在于此。<br><a href="https://blog.csdn.net/fei2636/article/details/78999318" target="_blank" rel="noopener">参考链接</a></p>
-<a id="more"></a>
+          <p>出书的人和经验丰富的实战工程师区别大概就在于此。<br><a href="https://blog.csdn.net/fei2636/article/details/78999318" target="_blank" rel="noopener">参考链接</a><br><a id="more"></a></p>
 <h1 id="爬虫与反爬概述"><a href="#爬虫与反爬概述" class="headerlink" title="爬虫与反爬概述"></a>爬虫与反爬概述</h1><p>就像攻击武器与防御武器一样，双方总是在不断升级。爬虫和反爬是典型的攻防双方的互相升级。但这种升级不像军事，军事是无尽头的，但是爬虫和反爬是有尽头的。</p>
 <h2 id="爬虫的尽头"><a href="#爬虫的尽头" class="headerlink" title="爬虫的尽头"></a>爬虫的尽头</h2><p>就是浏览器，一旦使用浏览器，程序完全可以模拟真实用户发出请求，</p>
 <h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>消耗资源，因为需要新开一个进程，解析DOM，运行客户端JavaScript代码。（<a href="https://github.com/GoogleChrome/puppeteer" target="_blank" rel="noopener">chrome的node api</a>在github开源仅仅两天，就拿到8k个star）</p>
@@ -310,7 +309,8 @@
 <th>应对</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>频率限制</td>
 <td>随机sleep</td>
 </tr>
@@ -338,16 +338,9 @@
 <td>内容反爬</td>
 <td>OCR</td>
 </tr>
-<tr>
-<td># 常见的反爬措施有下面几种：</td>
-<td></td>
-</tr>
-<tr>
-<td>## 访问频率</td>
-<td></td>
-</tr>
-</tbody></table>
-<p>很好理解，如果访问太频繁网站可能针对你的ip封锁一段时间，这和防DDoS的原理一样。对于爬虫来说，碰到这样的限制一下任务的频率就可以了，可以尽量让爬虫想人类一样访问网页（比如随机sleep一段时间，如果每隔3s访问一次网站很显然不是正常人的行为）。</p>
+</tbody>
+</table>
+<h1 id="常见的反爬措施有下面几种："><a href="#常见的反爬措施有下面几种：" class="headerlink" title="常见的反爬措施有下面几种："></a>常见的反爬措施有下面几种：</h1><h2 id="访问频率"><a href="#访问频率" class="headerlink" title="访问频率"></a>访问频率</h2><p>很好理解，如果访问太频繁网站可能针对你的ip封锁一段时间，这和防DDoS的原理一样。对于爬虫来说，碰到这样的限制一下任务的频率就可以了，可以尽量让爬虫想人类一样访问网页（比如随机sleep一段时间，如果每隔3s访问一次网站很显然不是正常人的行为）。</p>
 <h2 id="登录限制"><a href="#登录限制" class="headerlink" title="登录限制"></a>登录限制</h2><p>也比较常见。不过公开信息的网站一般不会有这个限制，这样让用户也麻烦了。其实反爬措施都或多或少的影响真实用户，反爬越严格，误杀用户的可能性也越高。对爬虫来说，登录同样可以通过模拟登录的方式解决，加个cookie就行了（话又说回来，网络的原理很重要）。</p>
 <h2 id="通过Header封杀"><a href="#通过Header封杀" class="headerlink" title="通过Header封杀"></a>通过Header封杀</h2><p>一般浏览器访问网站会有header，比如Safari或者Chrome等等，还有操作系统信息。如果使用程序访问并不会有这样的header。破解也很简单，访问的时候加上header就行。</p>
 <h2 id="JavaScript脚本动态获取网站数据"><a href="#JavaScript脚本动态获取网站数据" class="headerlink" title="JavaScript脚本动态获取网站数据"></a>JavaScript脚本动态获取网站数据</h2><p>有一些网站（尤其是单页面网站）的内容并不是通过服务器直接返回的，而是服务器只返回一个客户端JavaScript程序，然后JavaScript获取内容。更高级的是，JavaScript在本地计算一个token，然后拿这个token来进行AJAX获取内容。而本地的JavaScript又是经过代码混淆和加密的，这样我们做爬虫的通过看源代码几乎不可能模拟出来这个请求（主要是token不可能破解），但是我们可以从另一个角度：headless的浏览器，也就是我们直接运行这个客户端程序，这可以100%地模拟真实用户！</p>
@@ -369,9 +362,9 @@
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/爬虫与反爬.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/爬虫与反爬.md" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/爬虫与反爬.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/爬虫与反爬.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/爬虫与反爬.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/爬虫与反爬.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
             </p>
         
         <p>
@@ -380,7 +373,7 @@
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -413,7 +406,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爬虫与反爬概述"><span class="toc-number">1.</span> <span class="toc-text">爬虫与反爬概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#爬虫的尽头"><span class="toc-number">1.1.</span> <span class="toc-text">爬虫的尽头</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#缺点"><span class="toc-number">1.1.1.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#反爬的尽头"><span class="toc-number">1.2.</span> <span class="toc-text">反爬的尽头</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#职业道德"><span class="toc-number">1.3.</span> <span class="toc-text">职业道德</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#爬虫与反爬一览"><span class="toc-number">2.</span> <span class="toc-text">爬虫与反爬一览</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#登录限制"><span class="toc-number">2.1.</span> <span class="toc-text">登录限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通过Header封杀"><span class="toc-number">2.2.</span> <span class="toc-text">通过Header封杀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript脚本动态获取网站数据"><span class="toc-number">2.3.</span> <span class="toc-text">JavaScript脚本动态获取网站数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#验证码"><span class="toc-number">2.4.</span> <span class="toc-text">验证码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ip限制"><span class="toc-number">2.5.</span> <span class="toc-text">ip限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网站内容反爬"><span class="toc-number">2.6.</span> <span class="toc-text">网站内容反爬</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爬虫与反爬概述"><span class="toc-number">1.</span> <span class="toc-text">爬虫与反爬概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#爬虫的尽头"><span class="toc-number">1.1.</span> <span class="toc-text">爬虫的尽头</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#缺点"><span class="toc-number">1.1.1.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#反爬的尽头"><span class="toc-number">1.2.</span> <span class="toc-text">反爬的尽头</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#职业道德"><span class="toc-number">1.3.</span> <span class="toc-text">职业道德</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#爬虫与反爬一览"><span class="toc-number">2.</span> <span class="toc-text">爬虫与反爬一览</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见的反爬措施有下面几种："><span class="toc-number">3.</span> <span class="toc-text">常见的反爬措施有下面几种：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#访问频率"><span class="toc-number">3.1.</span> <span class="toc-text">访问频率</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#登录限制"><span class="toc-number">3.2.</span> <span class="toc-text">登录限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通过Header封杀"><span class="toc-number">3.3.</span> <span class="toc-text">通过Header封杀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript脚本动态获取网站数据"><span class="toc-number">3.4.</span> <span class="toc-text">JavaScript脚本动态获取网站数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#验证码"><span class="toc-number">3.5.</span> <span class="toc-text">验证码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ip限制"><span class="toc-number">3.6.</span> <span class="toc-text">ip限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网站内容反爬"><span class="toc-number">3.7.</span> <span class="toc-text">网站内容反爬</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -427,7 +420,7 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
 
     <script>
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
@@ -475,12 +468,12 @@
             </div>
             <div class="footer-right">
                 Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
-            </div>
+            </span></div>
         </div>
         
             <div class="visit">
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
+                    <span id="busuanzi_container_site_pv" style="display:none">
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -489,8 +482,8 @@
                     <span>| </span>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 

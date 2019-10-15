@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
@@ -123,11 +123,11 @@
 
         
             <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
             <i class="fa fa-times" onclick="resetSearch()"></i>
             </form>
             <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -255,7 +255,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-字典" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-字典" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
         <a href="/字典/" class="article-date">
@@ -267,7 +267,7 @@
     
     <div class="article-inner">
       
-        <input type="hidden" class="isFancy" />
+        <input type="hidden" class="isFancy">
       
       
         <header class="article-header">
@@ -298,9 +298,7 @@
             
           <p>列表和元组是数据集合。字典是键值对集合。<br>字典键重合的问题。字典的改和增。<br>列表和元组的索引对应字典的键。<br>键为数字的字典。<br>字典除了用{}申明外，还可以用dict()申明，用<code>dict()</code>时，键不能带引号。否则报错 <code>SyntaxError: keyword can&#39;t be an expression</code><br>学习，思考，应用，校正。人做事情，都需要有个反馈，反馈的周期越久，感觉上就越困难。很多大事情，都是由一个个小事务重复或迭代而成，每个小事务中，包含了反馈和校正<br>列表和元组形式上是[]、()的区别。元组的值不能修改。</p>
 <a id="more"></a>
-<p>定义：数据对集合。<br>申明：字典的关键字必须是唯一的。不能重复。但申明时不会报错。后面的键值对会自动覆盖前面的同名键值对。<br>        <code>{}</code>没写而且没调用<code>dict</code>函数会报错<code>SyntaxError: invalid syntax</code></p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重复的键</span></span><br><span class="line">myDic=&#123;<span class="string">'one'</span>:<span class="number">1</span>,<span class="string">'two'</span>:<span class="number">2</span>,<span class="string">'two'</span>:<span class="number">3</span>&#125; <span class="comment">#重复的键自动覆盖，和字典改数据一个理</span></span><br><span class="line">print(len(myDic)) <span class="comment"># 2</span></span><br><span class="line">print(myDic) <span class="comment"># &#123;'one': 1, 'two': 3&#125;</span></span><br><span class="line"><span class="comment"># &#123;&#125;申明</span></span><br><span class="line">myDic1=&#123;<span class="string">'one'</span>:<span class="number">1</span>,<span class="string">'two'</span>:<span class="number">2</span>,<span class="string">'three'</span>:<span class="number">3</span>&#125; <span class="comment">#键也可以是数字</span></span><br><span class="line">print(myDic1)  <span class="comment"># &#123;'one': 1, 'two': 2, 'three': 3&#125;</span></span><br><span class="line"><span class="comment"># dict()申明</span></span><br><span class="line">myDic2=dict(one=<span class="number">1</span>,two=<span class="number">2</span>,three=<span class="number">3</span>) <span class="comment">#dict函数申明时建不能带引号，否则报错 SyntaxError: keyword can't be an expression</span></span><br><span class="line">print(myDic2) <span class="comment">#&#123;'one': 1, 'two': 2, 'three': 3&#125;</span></span><br></pre></td></tr></table></figure>
-
+<p>定义：数据对集合。<br>申明：字典的关键字必须是唯一的。不能重复。但申明时不会报错。后面的键值对会自动覆盖前面的同名键值对。<br>        <code>{}</code>没写而且没调用<code>dict</code>函数会报错<code>SyntaxError: invalid syntax</code><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重复的键</span></span><br><span class="line">myDic=&#123;<span class="string">'one'</span>:<span class="number">1</span>,<span class="string">'two'</span>:<span class="number">2</span>,<span class="string">'two'</span>:<span class="number">3</span>&#125; <span class="comment">#重复的键自动覆盖，和字典改数据一个理</span></span><br><span class="line">print(len(myDic)) <span class="comment"># 2</span></span><br><span class="line">print(myDic) <span class="comment"># &#123;'one': 1, 'two': 3&#125;</span></span><br><span class="line"><span class="comment"># &#123;&#125;申明</span></span><br><span class="line">myDic1=&#123;<span class="string">'one'</span>:<span class="number">1</span>,<span class="string">'two'</span>:<span class="number">2</span>,<span class="string">'three'</span>:<span class="number">3</span>&#125; <span class="comment">#键也可以是数字</span></span><br><span class="line">print(myDic1)  <span class="comment"># &#123;'one': 1, 'two': 2, 'three': 3&#125;</span></span><br><span class="line"><span class="comment"># dict()申明</span></span><br><span class="line">myDic2=dict(one=<span class="number">1</span>,two=<span class="number">2</span>,three=<span class="number">3</span>) <span class="comment">#dict函数申明时建不能带引号，否则报错 SyntaxError: keyword can't be an expression</span></span><br><span class="line">print(myDic2) <span class="comment">#&#123;'one': 1, 'two': 2, 'three': 3&#125;</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="查"><a href="#查" class="headerlink" title="查"></a>查</h1><p>dicName[‘keyName’]</p>
 <h1 id="改"><a href="#改" class="headerlink" title="改"></a>改</h1><p>dicName[‘keyName’]=newData</p>
 <h1 id="增"><a href="#增" class="headerlink" title="增"></a>增</h1><p>dicName[‘keyName’]=newData</p>
@@ -320,9 +318,9 @@
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/字典.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/字典.md" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/字典.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/字典.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/字典.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/字典.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
             </p>
         
         <p>
@@ -331,7 +329,7 @@
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -378,7 +376,7 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
 
     <script>
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
@@ -426,12 +424,12 @@
             </div>
             <div class="footer-right">
                 Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
-            </div>
+            </span></div>
         </div>
         
             <div class="visit">
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
+                    <span id="busuanzi_container_site_pv" style="display:none">
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -440,8 +438,8 @@
                     <span>| </span>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 

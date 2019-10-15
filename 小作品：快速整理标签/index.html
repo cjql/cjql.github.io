@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
@@ -123,11 +123,11 @@
 
         
             <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
             <i class="fa fa-times" onclick="resetSearch()"></i>
             </form>
             <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -255,7 +255,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-小作品：快速整理标签" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-小作品：快速整理标签" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
         <a href="/小作品：快速整理标签/" class="article-date">
@@ -267,7 +267,7 @@
     
     <div class="article-inner">
       
-        <input type="hidden" class="isFancy" />
+        <input type="hidden" class="isFancy">
       
       
         <header class="article-header">
@@ -296,10 +296,8 @@
         
         
             
-          <p>hexo的标签和分类都不是自己理想的知识整理类型，写个python程序自动整理标签。<br>os.listdir(dire)、re.split(‘[\n ]’,tagsave)、 list(set(tagsOld).difference(set(tagsNew)))、正则子匹配项处理<br>小作品：<a href="http://localhost:8888/notebooks/post/tags.ipynb" target="_blank" rel="noopener">localhost</a> <a href="https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/post/tags.ipynb" target="_blank" rel="noopener">nbviewer</a> <a href="https://github.com/cjql/myjupyter/blob/master/post/tags.ipynb" target="_blank" rel="noopener">github</a></p>
-<a id="more"></a>
+          <p>hexo的标签和分类都不是自己理想的知识整理类型，写个python程序自动整理标签。<br>os.listdir(dire)、re.split(‘[\n ]’,tagsave)、 list(set(tagsOld).difference(set(tagsNew)))、正则子匹配项处理<br>小作品：<a href="http://localhost:8888/notebooks/post/tags.ipynb" target="_blank" rel="noopener">localhost</a> <a href="https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/post/tags.ipynb" target="_blank" rel="noopener">nbviewer</a> <a href="https://github.com/cjql/myjupyter/blob/master/post/tags.ipynb" target="_blank" rel="noopener">github</a><br><a id="more"></a></p>
 <h1 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h1><h2 id="os-listdir-dire"><a href="#os-listdir-dire" class="headerlink" title="os.listdir(dire)"></a>os.listdir(dire)</h2><h2 id="re-split-‘-n-’-tagsave"><a href="#re-split-‘-n-’-tagsave" class="headerlink" title="re.split(‘[\n ]’,tagsave)"></a>re.split(‘[\n ]’,tagsave)</h2><h2 id="list-set-tagsOld-difference-set-tagsNew"><a href="#list-set-tagsOld-difference-set-tagsNew" class="headerlink" title="list(set(tagsOld).difference(set(tagsNew)))"></a>list(set(tagsOld).difference(set(tagsNew)))</h2><h2 id="正则子匹配项处理"><a href="#正则子匹配项处理" class="headerlink" title="正则子匹配项处理"></a>正则子匹配项处理</h2><h1 id="点评"><a href="#点评" class="headerlink" title="点评"></a>点评</h1><h1 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h1><h1 id="清单"><a href="#清单" class="headerlink" title="清单"></a>清单</h1><h2 id="输入是什么"><a href="#输入是什么" class="headerlink" title="输入是什么"></a>输入是什么</h2><h2 id="给定常量是什么"><a href="#给定常量是什么" class="headerlink" title="给定常量是什么"></a>给定常量是什么</h2><h2 id="输出是什么"><a href="#输出是什么" class="headerlink" title="输出是什么"></a>输出是什么</h2><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><h1 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h1><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##自动更新标签分类</span></span><br><span class="line"><span class="comment">## (.*?)([ \n])</span></span><br><span class="line"><span class="comment">## [$1](/tags/$1)$2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="comment"># 获取新的标签列表</span></span><br><span class="line">dire=<span class="string">'D:\\blog\\public\\tags\\'</span></span><br><span class="line">tagsNew=os.listdir(dire)</span><br><span class="line">print(<span class="string">'新标签共有:'</span>,len(tagsNew))</span><br><span class="line"><span class="comment"># print(tagsNew)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#获取旧的标签列表</span></span><br><span class="line">tagsave=<span class="string">'''空闲扩展 思考</span></span><br><span class="line"><span class="string">achieve todo raw</span></span><br><span class="line"><span class="string">学习笔记 后续学习</span></span><br><span class="line"><span class="string">mind fix</span></span><br><span class="line"><span class="string">核对表</span></span><br><span class="line"><span class="string">数据结构 基本数据类型</span></span><br><span class="line"><span class="string">mysql</span></span><br><span class="line"><span class="string">ML NLP NLTK 文本分析</span></span><br><span class="line"><span class="string">编程基础</span></span><br><span class="line"><span class="string">python python基础 jupyter GUI 爬虫</span></span><br><span class="line"><span class="string">code</span></span><br><span class="line"><span class="string">book web menu github 转载</span></span><br><span class="line"><span class="string">wiki one</span></span><br><span class="line"><span class="string">packtpub</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">tagsOld=re.split(<span class="string">'[\n 、]'</span>,tagsave)</span><br><span class="line">print(<span class="string">'\n整理过的标签共有:'</span>,len(tagsOld))</span><br><span class="line"><span class="comment"># print(tagsOld)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#新旧标签对比</span></span><br><span class="line">old_new=list(set(tagsOld).difference(set(tagsNew)))</span><br><span class="line">print(<span class="string">'\n旧标签有而新标签没有：'</span>,len(old_new))</span><br><span class="line">print(old_new)</span><br><span class="line">new_old=list(set(tagsNew).difference(set(tagsOld)))</span><br><span class="line">print(<span class="string">'\n新标签有而旧标签没有：'</span>,len(new_old))</span><br><span class="line">print(new_old)</span><br><span class="line">refinds=re.findall(<span class="string">'(.*?)([ \n])'</span>,tagsave)</span><br><span class="line"><span class="keyword">for</span> refind <span class="keyword">in</span> refinds:</span><br><span class="line">    tagsave=tagsave.replace(refind[<span class="number">0</span>]+refind[<span class="number">1</span>],<span class="string">'[&#123;&#125;](/tags/&#123;&#125;)&#123;&#125;'</span>.format(refind[<span class="number">0</span>],refind[<span class="number">0</span>],refind[<span class="number">1</span>]))</span><br><span class="line">print(tagsave)</span><br></pre></td></tr></table></figure>
-
 
         
       </div>
@@ -315,9 +313,9 @@
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/小作品：快速整理标签.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/小作品：快速整理标签.md" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/小作品：快速整理标签.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/小作品：快速整理标签.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/小作品：快速整理标签.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/小作品：快速整理标签.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
             </p>
         
         <p>
@@ -326,7 +324,7 @@
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -373,7 +371,7 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
 
     <script>
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
@@ -421,12 +419,12 @@
             </div>
             <div class="footer-right">
                 Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
-            </div>
+            </span></div>
         </div>
         
             <div class="visit">
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
+                    <span id="busuanzi_container_site_pv" style="display:none">
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -435,8 +433,8 @@
                     <span>| </span>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
