@@ -5,10 +5,29 @@
     
     <entry>
       <title>20191104:Database System Concepts,Python3 in Ubuntu，MobaXterm debut</title>
+      <link href="/20191105/"/>
+      <url>/20191105/</url>
+      
+        <content type="html"><![CDATA[<p>WSGI 应用<br>a trailing slash.<br><a id="more"></a></p><h2 id="cheat-sheet"><a href="#cheat-sheet" class="headerlink" title="cheat sheet"></a>cheat sheet</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello, World!'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/projects/')</span></span><br><span class="line"><span class="meta">@app.route('/login', methods=['GET', 'POST'])</span></span><br><span class="line"><span class="meta">@app.route('/user/&lt;username&gt;')</span></span><br><span class="line"><span class="meta">@app.route('/post/&lt;int:post_id&gt;')</span></span><br><span class="line"><span class="meta">@app.route('/path/&lt;path:subpath&gt;')</span></span><br></pre></td></tr></table></figure><p><a href="https://flask.palletsprojects.com/en/1.1.x/quickstart/#a-minimal-application" target="_blank" rel="noopener">https://flask.palletsprojects.com/en/1.1.x/quickstart/#a-minimal-application</a><br><a href="https://flask.palletsprojects.com/en/1.1.x/quickstart/#variable-rules" target="_blank" rel="noopener">https://flask.palletsprojects.com/en/1.1.x/quickstart/#variable-rules</a><br>py -3 -m venv venv<br>venv/Scripts/activate</p><h2 id="debut"><a href="#debut" class="headerlink" title="debut"></a>debut</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/pallets/flask</span><br><span class="line">cd C:\Users\cj\Documents\GitHub\flask\examples\tutorial\flaskr</span><br><span class="line">flask init-db <span class="comment"># 生成数据库文件</span></span><br><span class="line">set FLASK_APP=flaskr</span><br><span class="line">set FLASK_ENV=development</span><br><span class="line">flask run</span><br></pre></td></tr></table></figure><p><a href="https://dormousehole.readthedocs.io/en/latest/tutorial/factory.html" target="_blank" rel="noopener">https://dormousehole.readthedocs.io/en/latest/tutorial/factory.html</a><br><a href="https://dormousehole.readthedocs.io/en/latest/tutorial/database.html" target="_blank" rel="noopener">https://dormousehole.readthedocs.io/en/latest/tutorial/database.html</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Flask </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>20191104:Database System Concepts,Python3 in Ubuntu,MobaXterm debut</title>
       <link href="/20191104/"/>
       <url>/20191104/</url>
       
-        <content type="html"><![CDATA[<p>1.Contents and Chapter1<br>2.apt-get,python3,python3-pip,venv<br>3.Download and start up<br><a id="more"></a></p><h2 id="Python3-in-Ubuntu"><a href="#Python3-in-Ubuntu" class="headerlink" title="Python3 in Ubuntu"></a>Python3 in Ubuntu</h2><p>apt list –installed | grep python<br>sudo apt-get update<br>sudo apt-get upgrade python3<br>sudo apt install python3-pip<br>sudo apt-get install build-essential libssl-dev libffi-dev python-dev<br>pip3 -V<br>sudo apt install -y python3-venv<br>mkdir wx<br>cd wx<br>python3 -m venv wx<br>ls wx<br>source wx/bin/activate<br>vim hello.py<br>i(Escape)<br>zz<br>:wq</p><p>pip3 install flask<br>python3 hello.py</p><p><a href="https://stackoverflow.com/questions/38298652/permissionerror-errno-13-permission-denied-flask-run" target="_blank" rel="noopener">https://stackoverflow.com/questions/38298652/permissionerror-errno-13-permission-denied-flask-run</a>  change port to 5000(tencent denies port 80)<br><a href="https://vitux.com/install-python3-on-ubuntu-and-set-up-a-virtual-programming-environment/" target="_blank" rel="noopener">https://vitux.com/install-python3-on-ubuntu-and-set-up-a-virtual-programming-environment/</a></p><h2 id="MobaXterm-debut"><a href="#MobaXterm-debut" class="headerlink" title="MobaXterm debut"></a>MobaXterm debut</h2><ol><li>Download<br><a href="https://mobaxterm.mobatek.net/download-home-edition.html" target="_blank" rel="noopener">https://mobaxterm.mobatek.net/download-home-edition.html</a> →Installer（Less CPU）<br>Chrome is too slow for some unknown reason,change to Edge</li><li>Connect Ubuntu<br>Session→SSH→<hostname> <username>→OK</username></hostname></li><li>Connect  Windows<br>Session→RDP→<hostname> <username>→OK<br><a href="https://blog.mrzhenggang.com/supercomputer-courses-ssh-sftp-mobaxterm/" target="_blank" rel="noopener">https://blog.mrzhenggang.com/supercomputer-courses-ssh-sftp-mobaxterm/</a><br><a href="https://mobaxterm.mobatek.net/documentation.html" target="_blank" rel="noopener">https://mobaxterm.mobatek.net/documentation.html</a></username></hostname></li></ol>]]></content>
+        <content type="html"><![CDATA[<p>1.Contents and Chapter1<br>2.apt-get,python3,python3-pip,venv<br>3.Download and start up<br><a id="more"></a></p><h2 id="Python3-in-Ubuntu"><a href="#Python3-in-Ubuntu" class="headerlink" title="Python3 in Ubuntu"></a>Python3 in Ubuntu</h2><p>apt list –installed | grep python<br>sudo apt-get update<br>sudo apt-get upgrade python3<br>sudo apt install python3-pip<br>sudo apt-get install build-essential libssl-dev libffi-dev python-dev<br>pip3 -V<br>sudo apt install -y python3-venv<br>mkdir wx<br>cd wx<br>python3 -m venv wx<br>ls wx<br>source wx/bin/activate<br>vim hello.py<br>i(Escape)<br>zz<br>:wq</p><p>pip3 install flask<br>python3 hello.py</p><p><a href="https://stackoverflow.com/questions/38298652/permissionerror-errno-13-permission-denied-flask-run" target="_blank" rel="noopener">https://stackoverflow.com/questions/38298652/permissionerror-errno-13-permission-denied-flask-run</a>  change port to 5000(tencent denies port 80)<br><a href="https://vitux.com/install-python3-on-ubuntu-and-set-up-a-virtual-programming-environment/" target="_blank" rel="noopener">https://vitux.com/install-python3-on-ubuntu-and-set-up-a-virtual-programming-environment/</a></p><h2 id="MobaXterm-debut"><a href="#MobaXterm-debut" class="headerlink" title="MobaXterm debut"></a>MobaXterm debut</h2><ol><li>Download<br><a href="https://mobaxterm.mobatek.net/download-home-edition.html" target="_blank" rel="noopener">https://mobaxterm.mobatek.net/download-home-edition.html</a> →Installer（Less CPU）<br>Chrome is too slow for some unknown reason,change to Edge</li><li>Connect Ubuntu<br>Session → SSH →【hostname】 【username】→ passport →OK</li><li>Connect  Windows<br>Session → RDP →【hostname】 【username】→ passport → OK<br><a href="https://blog.mrzhenggang.com/supercomputer-courses-ssh-sftp-mobaxterm/" target="_blank" rel="noopener">https://blog.mrzhenggang.com/supercomputer-courses-ssh-sftp-mobaxterm/</a><br><a href="https://mobaxterm.mobatek.net/documentation.html" target="_blank" rel="noopener">https://mobaxterm.mobatek.net/documentation.html</a></li></ol>]]></content>
       
       
       
@@ -91,9 +110,9 @@
       
         <tags>
             
-            <tag> fix </tag>
-            
             <tag> 黑客攻防 </tag>
+            
+            <tag> fix </tag>
             
         </tags>
       
@@ -226,27 +245,6 @@
         <tags>
             
             <tag> python基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>学习笔记：爬虫与反爬</title>
-      <link href="/%E7%88%AC%E8%99%AB%E4%B8%8E%E5%8F%8D%E7%88%AC/"/>
-      <url>/%E7%88%AC%E8%99%AB%E4%B8%8E%E5%8F%8D%E7%88%AC/</url>
-      
-        <content type="html"><![CDATA[<p>出书的人和经验丰富的实战工程师区别大概就在于此。<br><a href="https://blog.csdn.net/fei2636/article/details/78999318" target="_blank" rel="noopener">参考链接</a><br><a id="more"></a></p><h1 id="爬虫与反爬概述"><a href="#爬虫与反爬概述" class="headerlink" title="爬虫与反爬概述"></a>爬虫与反爬概述</h1><p>就像攻击武器与防御武器一样，双方总是在不断升级。爬虫和反爬是典型的攻防双方的互相升级。但这种升级不像军事，军事是无尽头的，但是爬虫和反爬是有尽头的。</p><h2 id="爬虫的尽头"><a href="#爬虫的尽头" class="headerlink" title="爬虫的尽头"></a>爬虫的尽头</h2><p>就是浏览器，一旦使用浏览器，程序完全可以模拟真实用户发出请求，</p><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>消耗资源，因为需要新开一个进程，解析DOM，运行客户端JavaScript代码。（<a href="https://github.com/GoogleChrome/puppeteer" target="_blank" rel="noopener">chrome的node api</a>在github开源仅仅两天，就拿到8k个star）</p><h2 id="反爬的尽头"><a href="#反爬的尽头" class="headerlink" title="反爬的尽头"></a>反爬的尽头</h2><p>就是像Google这种超级厉害的验证码，毕竟验证码的根本目的就是识别人类和机器的。</p><h2 id="职业道德"><a href="#职业道德" class="headerlink" title="职业道德"></a>职业道德</h2><p>成规模的爬虫一般都会使用集群，一般的小网站服务器规模可能不如爬虫集群的规模大。所以很多时候我们最好对要爬的网站限制一下频率。否则这些爬虫就相当于DoS攻击集群了！一般的网站都会有robots.txt可以参考。</p><h1 id="爬虫与反爬一览"><a href="#爬虫与反爬一览" class="headerlink" title="爬虫与反爬一览"></a>爬虫与反爬一览</h1><table><thead><tr><th>反爬</th><th>应对</th></tr></thead><tbody><tr><td>频率限制</td><td>随机sleep</td></tr><tr><td>登陆限制</td><td>加上cookie</td></tr><tr><td>header</td><td>header池</td></tr><tr><td>JS</td><td><a href="#JavaScript脚本动态获取网站数据">js反爬</a></td></tr><tr><td>验证码</td><td>机器学习</td></tr><tr><td>ip限制</td><td>代理池和高匿代理等好用的东西</td></tr><tr><td>内容反爬</td><td>OCR</td></tr></tbody></table><h1 id="常见的反爬措施有下面几种："><a href="#常见的反爬措施有下面几种：" class="headerlink" title="常见的反爬措施有下面几种："></a>常见的反爬措施有下面几种：</h1><h2 id="访问频率"><a href="#访问频率" class="headerlink" title="访问频率"></a>访问频率</h2><p>很好理解，如果访问太频繁网站可能针对你的ip封锁一段时间，这和防DDoS的原理一样。对于爬虫来说，碰到这样的限制一下任务的频率就可以了，可以尽量让爬虫想人类一样访问网页（比如随机sleep一段时间，如果每隔3s访问一次网站很显然不是正常人的行为）。</p><h2 id="登录限制"><a href="#登录限制" class="headerlink" title="登录限制"></a>登录限制</h2><p>也比较常见。不过公开信息的网站一般不会有这个限制，这样让用户也麻烦了。其实反爬措施都或多或少的影响真实用户，反爬越严格，误杀用户的可能性也越高。对爬虫来说，登录同样可以通过模拟登录的方式解决，加个cookie就行了（话又说回来，网络的原理很重要）。</p><h2 id="通过Header封杀"><a href="#通过Header封杀" class="headerlink" title="通过Header封杀"></a>通过Header封杀</h2><p>一般浏览器访问网站会有header，比如Safari或者Chrome等等，还有操作系统信息。如果使用程序访问并不会有这样的header。破解也很简单，访问的时候加上header就行。</p><h2 id="JavaScript脚本动态获取网站数据"><a href="#JavaScript脚本动态获取网站数据" class="headerlink" title="JavaScript脚本动态获取网站数据"></a>JavaScript脚本动态获取网站数据</h2><p>有一些网站（尤其是单页面网站）的内容并不是通过服务器直接返回的，而是服务器只返回一个客户端JavaScript程序，然后JavaScript获取内容。更高级的是，JavaScript在本地计算一个token，然后拿这个token来进行AJAX获取内容。而本地的JavaScript又是经过代码混淆和加密的，这样我们做爬虫的通过看源代码几乎不可能模拟出来这个请求（主要是token不可能破解），但是我们可以从另一个角度：headless的浏览器，也就是我们直接运行这个客户端程序，这可以100%地模拟真实用户！</p><h2 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h2><p>这几乎是终极武器了，验证码是专门用来区分人和计算机的手段。对于反爬方来说，这种方式对真实用户和搜索引擎（其实可以通过记录搜索引擎爬虫的ip来区别对待，可以解决）的危害比较大，相信读者都有输入验证码的痛苦经历。但这种方法也并不是无敌的！通过现在很火的机器学习可以轻松的识别大部分的验证码！Google的reCAPTCHA是一种非常高级的验证码，但是听过通过模拟浏览器也是可以破解的。有的网站需要验证码验证拿到一个token，token长得很像一个时间戳，本地自己生成一个时间戳发现也是能用的！于是就这样绕过了验证码。</p><h2 id="ip限制"><a href="#ip限制" class="headerlink" title="ip限制"></a>ip限制</h2><p>网站可能将识别的ip永久封杀，这种方式需要的人力比较大，而且误伤用户的代价也很高。但是破解办法却非常简单。目前代理池几乎是搞爬虫的标配了，甚至还有很多高匿代理等好用的东西。所以这基本上只能杀杀小爬虫。</p><h2 id="网站内容反爬"><a href="#网站内容反爬" class="headerlink" title="网站内容反爬"></a>网站内容反爬</h2><p>有一些网站将网站内容用只有人类可以接收的形式来呈现（其实反爬就是区别对待人类和机器嘛）。比如将内容用图片的形式显示。但是近几年来人类和机器的差别越来越小，图片可以用OCR准确率非常高地去识别。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> wiki </tag>
-            
-            <tag> 笔记整理 </tag>
             
         </tags>
       
@@ -809,9 +807,9 @@
             
             <tag> leetcode </tag>
             
-            <tag> 20190116 </tag>
-            
             <tag> 二叉树 </tag>
+            
+            <tag> 20190116 </tag>
             
             <tag> 搜索 </tag>
             
@@ -901,9 +899,9 @@
             
             <tag> python </tag>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> mysql </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -1089,9 +1087,9 @@
             
             <tag> python </tag>
             
-            <tag> jupyter </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> jupyter </tag>
             
         </tags>
       
