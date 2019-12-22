@@ -18,18 +18,16 @@
 
 
 
-<meta name="description" content="简述求两个整数之间能被自身所有十进制位上的数字整除的数。self-dividing-numbers 英文 中文 收获1.先单个判断，再进行范围遍历。2.str和int的妙用。3.好好体会return的位置和用法。">
-<meta name="keywords" content="leetcode">
-<meta property="og:type" content="article">
-<meta property="og:title" content="self-dividing-numbers">
-<meta property="og:url" content="https://cjql.github.io/leetcode/self-dividing-numbers/index.html">
+<meta name="description" content="Smart TOC is helpful">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CJ">
+<meta property="og:url" content="https://cjql.github.io/archives/2019/12/index.html">
 <meta property="og:site_name" content="CJ">
-<meta property="og:description" content="简述求两个整数之间能被自身所有十进制位上的数字整除的数。self-dividing-numbers 英文 中文 收获1.先单个判断，再进行范围遍历。2.str和int的妙用。3.好好体会return的位置和用法。">
+<meta property="og:description" content="Smart TOC is helpful">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-15T19:45:09.503Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="self-dividing-numbers">
-<meta name="twitter:description" content="简述求两个整数之间能被自身所有十进制位上的数字整除的数。self-dividing-numbers 英文 中文 收获1.先单个判断，再进行范围遍历。2.str和int的妙用。3.好好体会return的位置和用法。">
+<meta name="twitter:title" content="CJ">
+<meta name="twitter:description" content="Smart TOC is helpful">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -61,7 +59,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>self-dividing-numbers | CJ</title>
+<title>Archives: 2019/12 | CJ</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -71,8 +69,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: true,
-        isArchive: false,
+        isPost: false,
+        isArchive: true,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -255,163 +253,57 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-leetcode/self-dividing-numbers" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap">
+  
+  
     
-      <div class="article-meta">
-        <a href="/leetcode/self-dividing-numbers/" class="article-date">
-      <time datetime="2019-10-15T19:45:25.250Z" itemprop="datePublished">2019-10-16</time>
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/windows下用Flask开发微信公众号/" class="archive-article-date">
+      <time datetime="2019-12-22T17:31:29.370Z" itemprop="datePublished">12-23</time>
 </a>
 
 
-      </div>
-    
-    <div class="article-inner">
-      
-        <input type="hidden" class="isFancy">
-      
-      
-        <header class="article-header">
-          
+        </div>
+         
   
-    <h1 class="article-title" itemprop="name">
-      self-dividing-numbers
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/windows下用Flask开发微信公众号/">Windows环境下用Flask开发微信公众号</a>
     </h1>
   
 
-        </header>
-        
-        <div class="article-info article-info-post">
+        <div class="article-info info-on-archive">
           
 
           
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Flask/">Flask</a></li></ul>
     </div>
 
-          <div class="clearfix"></div>
         </div>
-        
-      
-      <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-          <h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>求两个整数之间能被自身所有十进制位上的数字整除的数。<br>self-dividing-numbers <a href="https://leetcode.com/problems/self-dividing-numbers/" target="_blank" rel="noopener">英文</a> <a href="https://leetcode-cn.com/problems/self-dividing-numbers/" target="_blank" rel="noopener">中文</a></p>
-<h2 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h2><p>1.先单个判断，再进行范围遍历。<br>2.<code>str</code>和<code>int</code>的妙用。<br>3.好好体会<code>return</code>的位置和用法。<br><a id="more"></a></p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">selfDividingNumbers</span><span class="params">(self, left, right)</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">self_dividing</span><span class="params">(n)</span>:</span></span><br><span class="line">            <span class="keyword">for</span> d <span class="keyword">in</span> str(n):</span><br><span class="line">                <span class="keyword">if</span> d == <span class="string">'0'</span> <span class="keyword">or</span> n % int(d) &gt; <span class="number">0</span>:</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line">        ans = []</span><br><span class="line">        <span class="keyword">for</span> n <span class="keyword">in</span> range(left, right + <span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> self_dividing(n):</span><br><span class="line">                ans.append(n)</span><br><span class="line">        <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
-
-        
-      </div>
-      
-    </div>
-    
-      
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/leetcode/self-dividing-numbers/">self-dividing-numbers</a></p>
-        <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
-        <p><span>发布时间:</span>2019-10-16, 03:45</p>
-        <p><span>最后更新:</span>2019-10-16, 03:45</p>
-        
-            <p>
-                <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/leetcode/self-dividing-numbers.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>,
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/leetcode/self-dividing-numbers.md" title="查看文章有关更新记录" target="_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/leetcode/self-dividing-numbers.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank"> .md Raw</a>
-            </p>
-        
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/leetcode/self-dividing-numbers/" title="self-dividing-numbers">https://cjql.github.io/leetcode/self-dividing-numbers/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/leetcode/self-dividing-numbers/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
-        </p>
-    </div>
-
-      
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/leetcode/sort-array-by-parity-ii/">
-                    sort-array-by-parity-ii
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/leetcode/search-in-a-binary-search-tree/">
-                    search-in-a-binary-search-tree
-                </a>
-            </div>
-        
-    </nav>
-
-    
-  </article>
-  
-  
-  
-  
-  
-  
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-number">1.</span> <span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#收获"><span class="toc-number">2.</span> <span class="toc-text">收获</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-6 i,
-        .toc-level-6 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
-
-    <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
-    </script>
-
-  
-  
-  
-  
-      
-  
-  
-  
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/leetcode/sort-array-by-parity-ii/" title="上一篇: sort-array-by-parity-ii">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/leetcode/search-in-a-binary-search-tree/" title="下一篇: search-in-a-binary-search-tree">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/windows下用Flask开发微信公众号/">Windows环境下用Flask开发微信公众号</a></li><li class="post-list-item"><a class="post-list-link" href="/20191105/">20191104:Database System Concepts,Python3 in Ubuntu，MobaXterm debut</a></li><li class="post-list-item"><a class="post-list-link" href="/20191104/">20191104:Database System Concepts,Python3 in Ubuntu,MobaXterm debut</a></li><li class="post-list-item"><a class="post-list-link" href="/docker/">Docker</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/twoSum/">twoSum</a></li><li class="post-list-item"><a class="post-list-link" href="/黑客攻防/">黑客攻防</a></li><li class="post-list-item"><a class="post-list-link" href="/黑客基础术语/">黑客基础术语</a></li><li class="post-list-item"><a class="post-list-link" href="/隐喻/">隐喻</a></li><li class="post-list-item"><a class="post-list-link" href="/软件构建/">软件构建</a></li><li class="post-list-item"><a class="post-list-link" href="/读书笔记：知识整理术语表/">读书笔记：知识整理术语表</a></li><li class="post-list-item"><a class="post-list-link" href="/线性表/">线性表</a></li><li class="post-list-item"><a class="post-list-link" href="/算法/">算法</a></li><li class="post-list-item"><a class="post-list-link" href="/程序可交互/">程序可交互</a></li><li class="post-list-item"><a class="post-list-link" href="/清洗+词频统计+排序+nltk+可视化/">清洗+词频统计+排序+nltk+可视化</a></li><li class="post-list-item"><a class="post-list-link" href="/核对表/">核对表</a></li><li class="post-list-item"><a class="post-list-link" href="/构建/">构建</a></li><li class="post-list-item"><a class="post-list-link" href="/机器学习网址资源/">机器学习网址资源</a></li><li class="post-list-item"><a class="post-list-link" href="/文件读写权限/">文件读写权限</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构概览/">数据结构概览</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构/">数据结构概述——感受编程之美</a></li><li class="post-list-item"><a class="post-list-link" href="/小作品：快速生成普通文章/">小作品：快速生成普通文章</a></li><li class="post-list-item"><a class="post-list-link" href="/小作品：快速生成LeetCode模板/">小作品：快速生成LeetCode模板</a></li><li class="post-list-item"><a class="post-list-link" href="/小作品：快速整理标签/">小作品：快速整理标签</a></li><li class="post-list-item"><a class="post-list-link" href="/小作品：小作品快速生成/">小作品：小作品快速生成</a></li><li class="post-list-item"><a class="post-list-link" href="/小作品：列表批量生成文章/">小作品：列表批量生成文章</a></li><li class="post-list-item"><a class="post-list-link" href="/学习笔记：图解HTTP/">学习笔记：图解HTTP</a></li><li class="post-list-item"><a class="post-list-link" href="/字典/">字典、元组</a></li><li class="post-list-item"><a class="post-list-link" href="/基本数据类型/">基本数据类型</a></li><li class="post-list-item"><a class="post-list-link" href="/列表/">列表</a></li><li class="post-list-item"><a class="post-list-link" href="/使用Tkinter模块来创建简单的GUI程序/">转载：使用Tkinter模块来创建简单的GUI程序</a></li><li class="post-list-item"><a class="post-list-link" href="/代码样式/">代码样式</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全书籍介绍/">代码大全书籍介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全/">代码大全</a></li><li class="post-list-item"><a class="post-list-link" href="/三思而后行/">三思而后行</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/univalued-binary-tree/">univalued-binary-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/tag/">tag</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/swap-salary/">swap-salary</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/sort-array-by-parity-ii/">sort-array-by-parity-ii</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/self-dividing-numbers/">self-dividing-numbers</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/search-in-a-binary-search-tree/">search-in-a-binary-search-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/python的特殊方法/">python的特殊方法</a></li><li class="post-list-item"><a class="post-list-link" href="/Python文件读写/">Python文件读写</a></li><li class="post-list-item"><a class="post-list-link" href="/Python字符串操作/">Python字符串操作</a></li><li class="post-list-item"><a class="post-list-link" href="/pythonmysql/">pythonmysql</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/peak-index-in-a-mountain-array/">peak-index-in-a-mountain-array</a></li><li class="post-list-item"><a class="post-list-link" href="/packtpub/">packtpub</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/number-of-recent-calls/">number-of-recent-calls</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/n-ary-tree-preorder-traversal/">n-ary-tree-preorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/n-ary-tree-postorder-traversal/">n-ary-tree-postorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/merge-two-binary-trees/">merge-two-binary-trees</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/k-closest-points-to-origin/">k-closest-points-to-origin</a></li><li class="post-list-item"><a class="post-list-link" href="/jupyter/">jupyter</a></li><li class="post-list-item"><a class="post-list-link" href="/ireadweek/">ireadweek</a></li><li class="post-list-item"><a class="post-list-link" href="/IP地址/">IP地址</a></li><li class="post-list-item"><a class="post-list-link" href="/hello/">hello</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/hamming-distance/">hamming-distance</a></li><li class="post-list-item"><a class="post-list-link" href="/github/">github</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/fibonacci-number/">fibonacci-number</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/di-string-match/">di-string-match</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/array-partition-i/">array-partition-i</a></li><li class="post-list-item"><a class="post-list-link" href="/achieve/">achieve</a></li><li class="post-list-item"><a class="post-list-link" href="/学习笔记：NLTK/">学习笔记：NLTK</a></li><li class="post-list-item"><a class="post-list-link" href="/leetcode/hello-world/">Hello World</a></li></ul>
-
-
-  
-  
-      <script>
-          
-      </script>
+        <div class="clearfix"></div>
+    </header>
   </div>
+</article>
+  
+  
+    </div></section>
+  
+
+    
+
+</div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">
