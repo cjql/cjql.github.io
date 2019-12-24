@@ -19,14 +19,13 @@
 
 
 <meta name="description" content="按官方样例对flask语句进行详解。">
-<meta name="keywords" content="Flask">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flask">
 <meta property="og:url" content="https://cjql.github.io/flask/index.html">
 <meta property="og:site_name" content="CJ">
 <meta property="og:description" content="按官方样例对flask语句进行详解。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-24T12:10:47.466Z">
+<meta property="og:updated_time" content="2019-12-24T12:18:59.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flask">
 <meta name="twitter:description" content="按官方样例对flask语句进行详解。">
@@ -284,10 +283,6 @@
           
 
           
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Flask/">Flask</a></li></ul>
-    </div>
-
           <div class="clearfix"></div>
         </div>
         
@@ -297,29 +292,23 @@
         
             
           <p>按官方样例对flask语句进行详解。<br><a id="more"></a>  </p>
-<h2 id="cheat-sheet"><a href="#cheat-sheet" class="headerlink" title="cheat sheet"></a>cheat sheet</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask  </span><br><span class="line">app = Flask(__name__)  </span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/')  </span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span><span class="params">()</span>:</span>  </span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello, World!'</span>  </span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/projects/')  </span></span><br><span class="line"><span class="meta">@app.route('/login', methods=['GET', 'POST'])  </span></span><br><span class="line"><span class="meta">@app.route('/user/&lt;username&gt;')  </span></span><br><span class="line"><span class="meta">@app.route('/post/&lt;int:post_id&gt;')  </span></span><br><span class="line"><span class="meta">@app.route('/path/&lt;path:subpath&gt;')  </span></span><br><span class="line">```  </span><br><span class="line">https://flask.palletsprojects.com/en/<span class="number">1.1</span>.x/quickstart/<span class="comment">#a-minimal-application  </span></span><br><span class="line">https://flask.palletsprojects.com/en/<span class="number">1.1</span>.x/quickstart/<span class="comment">#variable-rules  </span></span><br><span class="line">py <span class="number">-3</span> -m venv venv  </span><br><span class="line">venv/Scripts/activate  </span><br><span class="line"></span><br><span class="line"><span class="comment">## debut  </span></span><br><span class="line">```py  </span><br><span class="line">git clone https://github.com/pallets/flask  </span><br><span class="line">cd C:\Users\cj\Documents\GitHub\flask\examples\tutorial\flaskr  </span><br><span class="line">flask init-db <span class="comment"># 生成数据库文件  </span></span><br><span class="line">set FLASK_APP=flaskr  </span><br><span class="line">set FLASK_ENV=development  </span><br><span class="line">flask run  </span><br><span class="line">```  </span><br><span class="line">https://dormousehole.readthedocs.io/en/latest/tutorial/factory.html  </span><br><span class="line">https://dormousehole.readthedocs.io/en/latest/tutorial/database.html  </span><br><span class="line"><span class="comment"># 文件结构概览</span></span><br></pre></td></tr></table></figure>
-<p>flaskr<br>    static<br>        style.css<br>        table.js<br>    templates<br>        base.html<br>        auth<br>            login.html<br>            register.html<br>        blog<br>            blog.html<br>            blogCreate.html<br>            blogUpdate.html<br>    schema.sql<br>    <strong>init</strong>.py<br>    auth.py<br>    blog.py<br>    db.py  </p>
-<pre><code># 文件关系依赖  
-`A⇒B`：表示B要调用A文件里的内容。  
-schema.sql⇒db.py⇒auth.py  
-
-# flaskr  
-## templates  
-### base.html文件  
-`&lt;title&gt;{% block title %}{% endblock %}`：  
+<h2 id="cheat-sheet"><a href="#cheat-sheet" class="headerlink" title="cheat sheet"></a>cheat sheet</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask  </span><br><span class="line">app = Flask(__name__)  </span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/')  </span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span><span class="params">()</span>:</span>  </span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello, World!'</span>  </span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/projects/')  </span></span><br><span class="line"><span class="meta">@app.route('/login', methods=['GET', 'POST'])  </span></span><br><span class="line"><span class="meta">@app.route('/user/&lt;username&gt;')  </span></span><br><span class="line"><span class="meta">@app.route('/post/&lt;int:post_id&gt;')  </span></span><br><span class="line"><span class="meta">@app.route('/path/&lt;path:subpath&gt;')  </span></span><br><span class="line">```  </span><br><span class="line">https://flask.palletsprojects.com/en/<span class="number">1.1</span>.x/quickstart/<span class="comment">#a-minimal-application  </span></span><br><span class="line">https://flask.palletsprojects.com/en/<span class="number">1.1</span>.x/quickstart/<span class="comment">#variable-rules  </span></span><br><span class="line">py <span class="number">-3</span> -m venv venv  </span><br><span class="line">venv/Scripts/activate  </span><br><span class="line"></span><br><span class="line"><span class="comment">## debut  </span></span><br><span class="line">```py  </span><br><span class="line">git clone https://github.com/pallets/flask  </span><br><span class="line">cd C:\Users\cj\Documents\GitHub\flask\examples\tutorial\flaskr  </span><br><span class="line">flask init-db <span class="comment"># 生成数据库文件  </span></span><br><span class="line">set FLASK_APP=flaskr  </span><br><span class="line">set FLASK_ENV=development  </span><br><span class="line">flask run  </span><br><span class="line">```  </span><br><span class="line">https://dormousehole.readthedocs.io/en/latest/tutorial/factory.html  </span><br><span class="line">https://dormousehole.readthedocs.io/en/latest/tutorial/database.html  </span><br><span class="line"><span class="comment"># 文件结构概览  </span></span><br><span class="line">```css</span><br><span class="line">flaskr  </span><br><span class="line">    static  </span><br><span class="line">        style.css  </span><br><span class="line">        table.js  </span><br><span class="line">    templates  </span><br><span class="line">        base.html  </span><br><span class="line">        auth  </span><br><span class="line">            login.html  </span><br><span class="line">            register.html  </span><br><span class="line">        blog  </span><br><span class="line">            blog.html  </span><br><span class="line">            blogCreate.html  </span><br><span class="line">            blogUpdate.html  </span><br><span class="line">    schema.sql  </span><br><span class="line">    __init__.py  </span><br><span class="line">    auth.py  </span><br><span class="line">    blog.py  </span><br><span class="line">    db.py</span><br></pre></td></tr></table></figure>
+<h1 id="文件关系依赖"><a href="#文件关系依赖" class="headerlink" title="文件关系依赖"></a>文件关系依赖</h1><p><code>A⇒B</code>：表示B要调用A文件里的内容。<br>schema.sql⇒db.py⇒auth.py  </p>
+<h1 id="flaskr"><a href="#flaskr" class="headerlink" title="flaskr"></a>flaskr</h1><h2 id="templates"><a href="#templates" class="headerlink" title="templates"></a>templates</h2><h3 id="base-html文件"><a href="#base-html文件" class="headerlink" title="base.html文件"></a>base.html文件</h3>
+`<title>{% block title %}{% endblock %}</title>`：  
 以此文档为基的其他文档，`{% block title %}{% endblock %}`里的内容都是title。  
 - `{% block title %}{% endblock %}`：起占位作用。title可以是任意的html标签。如果static文件以外的文件里的html元素不用block包裹，则无法生效。  
-- `&lt;title&gt;&lt;/title&gt;`：决定其内容是title。  
+- `<title></title>`：决定其内容是title。  
 
-`&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ url_for('static', filename='style.css') }}&quot;&gt;`：  
+`<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">`：  
 - static是flaskr的一级子文件夹。  
 - style.css是static里的文件。  
 
-`&lt;script type=text/javascript src=&quot;{{ url_for('static', filename='table.js') }}&quot;&gt;&lt;/script&gt;`：  
+`<script type="text/javascript" src="{{ url_for('static', filename='table.js') }}"></script>`：  
 - 全局script。  
 
-`&lt;nav&gt;&lt;/nav&gt;`：导航栏。  
-`&lt;a href=&quot;{{ url_for('blog.shixi')}}&quot;&gt;图集&lt;/a&gt;`：  
+`<nav></nav>`：导航栏。  
+`<a href="{{ url_for('blog.shixi')}}">图集</a>`：  
 - blog是flaskr里的py文件  
 - shixi是blog.py的一个路径装饰器下的函数。  
 
@@ -328,77 +317,85 @@ schema.sql⇒db.py⇒auth.py
 - 条件表达式。**是谁的呢**  
 - {% if g.user %}：如果已登录。  
 
-`&lt;ul&gt;&lt;/ul&gt;`：**通过css来控制对齐吗？**  
-`&lt;section class=&quot;content&quot;&gt;&lt;/section&gt;`：子html的格式定义。  
+`<ul></ul>`：**通过css来控制对齐吗？**  
+`<section class="content"></section>`：子html的格式定义。  
 `{% for message in get_flashed_messages() %}`：**全项目只用到了flask.flash(error)。用于程序出错时，在页面显示错误。error可自定义。**  
 `{{ message }}`：**flash错误信息**  
 ### blog  
 #### blog.html  
 `{% extends 'base.html' %}`：继承自base.html  
-`&lt;a class=&quot;action&quot; href=&quot;{{ url_for('blog.create') }}&quot;&gt;New&lt;/a&gt;`：不传数据，只调用函数。  
-`&lt;a class=&quot;action&quot; href=&quot;{{ url_for('blog.update', id=post['id']) }}&quot;&gt;编辑&lt;/a&gt;`：传数据，且调用函数。`id=post[&apos;id&apos;]) `用来传参。  
+`<a class="action" href="{{ url_for('blog.create') }}">New</a>`：不传数据，只调用函数。  
+`<a class="action" href="{{ url_for('blog.update', id=post['id']) }}">编辑</a>`：传数据，且调用函数。`id=post['id']) `用来传参。  
 `{% for post in posts %}`：自动传post。post的内容在blog.py里面定义。  
 `{% if g.user['id'] == post['author_id'] %}`：只显示当前登录用户的数据。  
-`post[&apos;created&apos;].`：获取post的键created的值  
+`post['created'].`：获取post的键created的值  
 `{}`：html内的逻辑语句或占位符。  
 `{{}}`：抽取一般html的某些元素或属性，括起来用于传递参数。用flask的方法，如url_for()、request.form[]。  
 #### blogCreate.html  
-`&lt;form method=&quot;post&quot;&gt;&lt;/form&gt;`：里面的内容可以传参了。  
-`&lt;input name=&quot;title&quot; id=&quot;title&quot; value=&quot;{{ request.form['title'] }}&quot; required&gt;`  
-`&lt;textarea name=&quot;body&quot; id=&quot;body&quot;&gt;{{ request.form['body'] }}&lt;/textarea&gt;`  
-`&lt;input type=&quot;submit&quot; value=&quot;Save&quot;&gt;`  
+`<form method="post"></form>`：里面的内容可以传参了。  
+`<input name="title" id="title" value="{{ request.form['title'] }}" required>`  
+`<textarea name="body" id="body">{{ request.form['body'] }}</textarea>`  
+`<input type="submit" value="Save">`  
 #### blogUpdate.html  
 已有数据时自动填充或没有数据：  
-`&lt;input name=&quot;title&quot; id=&quot;title&quot; value=&quot;{{ request.form['title'] or post['title'] }}&quot; `  
-`&lt;textarea name=&quot;body&quot; id=&quot;body&quot;&gt;{{ request.form['body'] or post['body'] }}&lt;/textarea&gt;`  
+`<input name="title" id="title" value="{{ request.form['title'] or post['title'] }}" `="" `<textarea="">{{ request.form['body'] or post['body'] }}`  
 调用blog里的python函数，并传递参数：  
-`&lt;form action=&quot;{{ url_for('blog.delete', id=post['id']) }}&quot; method=&quot;post&quot;&gt;`  
+`<form action="{{ url_for('blog.delete', id=post['id']) }}" method="post">`  
 ### auth  
 #### login.html  
-`&lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; required&gt;`：type=&quot;password&quot; 会自动加密。加密函数在anth中定义。  
+`<input type="password" name="password" id="password" required>`：type="password" 会自动加密。加密函数在anth中定义。  
 #### register.html  
 除了标题和submit按钮的值外，其余的和login.html一模一样。  
 ## schema.sql  
 存放sql语句。用来初始化数据库。  
 ## db.py  
 太漂亮了，每个函数就几行。  
-&gt;lib依赖  
+>lib依赖  
 click  
 sqlite3  
 flask：current_app、g、.cli.with_appcontext  
-&gt;用到的命令  
+>用到的命令  
 ```py  
-g.db、g.db.row_factory、g.db.executescript(f.read().decode(&quot;utf8&quot;))、g.pop(&quot;db&quot;, None)  
-current_app.config[&quot;DATABASE&quot;]、with current_app.open_resource(&quot;schema.sql&quot;) as f  
+g.db、g.db.row_factory、g.db.executescript(f.read().decode("utf8"))、g.pop("db", None)  
+current_app.config["DATABASE"]、with current_app.open_resource("schema.sql") as f  
 sqlite3.Row  
-@click.command(&quot;init-db&quot;)、click.echo(&quot;Initialized the database.&quot;)  
+@click.command("init-db")、click.echo("Initialized the database.")  
 app.teardown_appcontext(close_db)、app.cli.add_command(init_db_command)  
 get_db()：用于连接数据库  
-</code></pre><h2 id="auth-py"><a href="#auth-py" class="headerlink" title="auth.py"></a>auth.py</h2><blockquote>
-<p>lib依赖<br>functools<br>flask：Blueprint、flash、g、redirect、render_template、request、session、url_for<br>werkzeug.security：check_password_hash（检查密码是否一致）、generate_password_hash（加密密码）<br>flaskr.db ：get_db（用于链接数据库）<br>用到的命令<br>bp = <code>Blueprint(&quot;auth&quot;, __name__, url_prefix=&quot;/auth&quot;)</code>：  </p>
-<ul>
-<li>auth：蓝图名。  </li>
-<li><strong>name</strong>。  </li>
-<li>url_prefix：bp.route的前缀路径。  </li>
-</ul>
-</blockquote>
-<p><a href="mailto:`@functools.wraps" target="_blank" rel="noopener">`@functools.wraps</a>(view)`：复制属性。  </p>
-<ul>
-<li>《Python 3标准库》，苏金国，201903，P118.  </li>
-<li><em>The Python 3 Standard Library by Example.pdf</em>,DougHellmann,2017,P149.  </li>
-</ul>
-<p>wrapped_view(**kwargs)如果没登录，就重定向到登录页，否则返回view的参数。  </p>
-<p><a href="mailto:`@bp.befor" target="_blank" rel="noopener">`@bp.befor</a>e_app_request<code>：请求前的装饰器。  
-session.get(&quot;user_id&quot;)：获取用ID。如果是None，则把None赋值给g.user。否则从用户user表中取出id与session.get(&quot;user_id&quot;)相同的那条记录。  
-get_db().execute(&quot;SELECT * FROM user WHERE id = ?&quot;, (user_id,)).fetchone()：连接数据库并查询，取一项。  
+```  
+## auth.py  
+>lib依赖  
+functools  
+flask：Blueprint、flash、g、redirect、render_template、request、session、url_for  
+werkzeug.security：check_password_hash（检查密码是否一致）、generate_password_hash（加密密码）  
+flaskr.db ：get_db（用于链接数据库）  
+>用到的命令  
+bp = `Blueprint("auth", __name__, url_prefix="/auth")`：  
+- auth：蓝图名。  
+- __name__。  
+- url_prefix：bp.route的前缀路径。  
+
+`@functools.wraps(view)`：复制属性。  
+- 《Python 3标准库》，苏金国，201903，P118.  
+- *The Python 3 Standard Library by Example.pdf*,DougHellmann,2017,P149.  
+
+wrapped_view(**kwargs)如果没登录，就重定向到登录页，否则返回view的参数。  
+
+`@bp.before_app_request`：请求前的装饰器。  
+session.get("user_id")：获取用ID。如果是None，则把None赋值给g.user。否则从用户user表中取出id与session.get("user_id")相同的那条记录。  
+get_db().execute("SELECT * FROM user WHERE id = ?", (user_id,)).fetchone()：连接数据库并查询，取一项。  
 db = get_db()  
 db.excute(sql).fetchone()  
 db.commit()  
-if request.method == &quot;POST&quot;:  
-username = request.form[&quot;username&quot;]：解析POST过来的函数。  
-flash(error)：检查错误。</code>return redirect(url_for(“auth.login”))`：重定向到auth.py的login函数。form表单数据提交后执行的函数。<br>return render_template(“auth/register.html”)：含form表单的当前路径显示的网页。  </p>
-<p><a href="https://realpython.com/search?q=flask-by-example" target="_blank" rel="noopener">https://realpython.com/search?q=flask-by-example</a>  </p>
+if request.method == "POST":  
+username = request.form["username"]：解析POST过来的函数。  
+flash(error)：检查错误。  
+`return redirect(url_for("auth.login"))`：重定向到auth.py的login函数。form表单数据提交后执行的函数。  
+return render_template("auth/register.html")：含form表单的当前路径显示的网页。  
 
+https://realpython.com/search?q=flask-by-example  
+
+</form>
         
       </div>
       
@@ -409,7 +406,7 @@ flash(error)：检查错误。</code>return redirect(url_for(“auth.login”))`
         <p><span>本文标题:</span><a href="/flask/">Flask</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
         <p><span>发布时间:</span>2019-11-05, 15:22</p>
-        <p><span>最后更新:</span>2019-12-24, 20:10</p>
+        <p><span>最后更新:</span>2019-12-24, 20:18</p>
         
             <p>
                 <span>更新历史:</span><i class="fa fa-github"></i>
@@ -457,9 +454,9 @@ flash(error)：检查错误。</code>return redirect(url_for(“auth.login”))`
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#cheat-sheet"><span class="toc-number">1.</span> <span class="toc-text">cheat sheet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#auth-py"><span class="toc-number">2.</span> <span class="toc-text">auth.py</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#cheat-sheet"><span class="toc-number">1.</span> <span class="toc-text">cheat sheet</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#文件关系依赖"><span class="toc-number"></span> <span class="toc-text">文件关系依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#flaskr"><span class="toc-number"></span> <span class="toc-text">flaskr</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#templates"><span class="toc-number">1.</span> <span class="toc-text">templates</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#base-html文件"><span class="toc-number">1.1.</span> <span class="toc-text">base.html文件</span></a></li></ol></li></ol>
         
-    </div>
+    </li></div>
     <style>
         .left-col .switch-btn,
         .left-col .switch-area {
