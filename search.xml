@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>新测试</title>
+      <link href="/cs/%E6%96%B0%E6%B5%8B%E8%AF%95/"/>
+      <url>/cs/%E6%96%B0%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<p>看看子文件夹有没有部署成功<br><a id="more"></a><br>test</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python爬虫</title>
       <link href="/cs/%E7%88%AC%E8%99%AB%E7%9F%A5%E8%AF%86/"/>
       <url>/cs/%E7%88%AC%E8%99%AB%E7%9F%A5%E8%AF%86/</url>
