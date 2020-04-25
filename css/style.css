@@ -252,7 +252,7 @@ a {
 #container .left-col .intrude-less {
   width: 76%;
   text-align: center;
-  margin: 112px auto 0;
+  margin: 20px auto 0;
 }
 #container .left-col li:hover {
   background: none;
@@ -1715,7 +1715,7 @@ li:hover {
   position: fixed;
   border: none;
   left: 228px;
-  top: 389px;
+  top: 17px;
   background: none;
   font-size: 0.9em;
   font-weight: bold;
@@ -1738,7 +1738,7 @@ li:hover {
 .toc-article {
   position: fixed;
   width: 238px;
-  top: 382px;
+  top: 10px;
   bottom: 1em;
   left: 0;
   margin-left: 0em;
@@ -1748,6 +1748,7 @@ li:hover {
 }
 #toc {
   float: right;
+  background: #c7edcc;
   font-size: 0.9rem;
   line-height: 1.65em;
 }
