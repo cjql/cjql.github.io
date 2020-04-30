@@ -19,13 +19,14 @@
 
 
 <meta name="description" content="jupyter命令一览。">
+<meta name="keywords" content="计算机,软件开发,工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jupyter">
 <meta property="og:url" content="https://cjql.github.io/Jupyter/index.html">
 <meta property="og:site_name" content="CJ">
 <meta property="og:description" content="jupyter命令一览。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-30T09:42:45.422Z">
+<meta property="og:updated_time" content="2020-04-30T14:33:18.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jupyter">
 <meta name="twitter:description" content="jupyter命令一览。">
@@ -196,7 +197,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/">LeetCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据库/">数据库</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/方法论/">方法论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程语言/">编程语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计算机/">计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计算机网络/">计算机网络</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/软件开发/">软件开发</a></li></ul>
                     </div>
                 </section>
                 
@@ -287,6 +288,10 @@
           
 
           
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件开发/">软件开发</a></li></ul>
+    </div>
+
           <div class="clearfix"></div>
         </div>
         
@@ -296,9 +301,9 @@
         
             
           <p>jupyter命令一览。<br><a id="more"></a></p>
-<h1 id="新习"><a href="#新习" class="headerlink" title="新习"></a>新习</h1><h2 id="2018年12月13日"><a href="#2018年12月13日" class="headerlink" title="2018年12月13日"></a>2018年12月13日</h2><h3 id="jupyter-输出去掉-n"><a href="#jupyter-输出去掉-n" class="headerlink" title="jupyter 输出去掉 \n"></a>jupyter 输出去掉 <code>\n</code></h3><p>要 <code>print</code> 才出效果<br><a href="https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook" target="_blank" rel="noopener">https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook</a></p>
-<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="官方网站"><a href="#官方网站" class="headerlink" title="官方网站"></a>官方网站</h2><p><a href="http://jupyter.org/install" target="_blank" rel="noopener">官方网站</a> </p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>pip install jupyter --user</code> 安装<br><code>jupyter notebook</code> 进入笔记本</p>
+<p>输出去掉 <code>\n</code>：<a href="https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook" target="_blank" rel="noopener">https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook</a></p>
+<p><a href="http://jupyter.org/" target="_blank" rel="noopener">http://jupyter.org/</a></p>
+<p><code>pip install jupyter --user</code> 安装<br><code>jupyter notebook</code> 进入笔记本</p>
 <h2 id="修改默认路径和浏览器"><a href="#修改默认路径和浏览器" class="headerlink" title="修改默认路径和浏览器"></a>修改默认路径和浏览器</h2><p>Windows默认在chrome里面打开：<br>1.命令行：jupyter notebook –generate-config<br>2.打开文件：jupyter_notebook_config.py<br>3.在文件头部添加:<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line">webbrowser.register(<span class="string">'chrome'</span>, <span class="keyword">None</span>, webbrowser.GenericBrowser(<span class="string">u'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'</span>))</span><br><span class="line">c.NotebookApp.browser = <span class="string">'chrome'</span></span><br></pre></td></tr></table></figure></p>
 <p>路径需要酌情调整。</p>
 <h1 id="在nbviewer中查看"><a href="#在nbviewer中查看" class="headerlink" title="在nbviewer中查看"></a>在nbviewer中查看</h1><p>github文件的网址中把<code>https://github.com</code> 替换为<code>https://nbviewer.jupyter.org/github</code> 。<br>注意斜线个数。<a href="https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/MySQL.ipynb" target="_blank" rel="noopener">典型示例</a>：<code>https://nbviewer.jupyter.org/github/cjql/myjupyter/blob/master/MySQL.ipynb</code><br><a href="http://nbviewer.jupyter.org/faq" target="_blank" rel="noopener">官方网站</a></p>
@@ -366,7 +371,7 @@
         <p><span>本文标题:</span><a href="/Jupyter/">Jupyter</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
         <p><span>优先级别:</span>2032-12-24</p>
-        <p><span>最后更新:</span>2020-04-30, 17:42</p>
+        <p><span>最后更新:</span>2020-04-30, 22:33</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/Jupyter/" title="Jupyter">https://cjql.github.io/Jupyter/</a>
             <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/Jupyter/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -421,9 +426,9 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#新习"><span class="toc-text">新习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2018年12月13日"><span class="toc-text">2018年12月13日</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jupyter-输出去掉-n"><span class="toc-text">jupyter 输出去掉 \n</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#准备"><span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方网站"><span class="toc-text">官方网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改默认路径和浏览器"><span class="toc-text">修改默认路径和浏览器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在nbviewer中查看"><span class="toc-text">在nbviewer中查看</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#格式转换-html、md、pdf、letex"><span class="toc-text">格式转换: html、md、pdf、letex</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-text">参考链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后续"><span class="toc-text">后续</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令式"><span class="toc-text">命令式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面板式"><span class="toc-text">面板式</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#修改默认路径和浏览器"><span class="toc-text">修改默认路径和浏览器</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#在nbviewer中查看"><span class="toc-text">在nbviewer中查看</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#格式转换-html、md、pdf、letex"><span class="toc-text">格式转换: html、md、pdf、letex</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-text">参考链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后续"><span class="toc-text">后续</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令式"><span class="toc-text">命令式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面板式"><span class="toc-text">面板式</span></a></li></ol>
         
-    </div>
+    </li></div>
     <style>
         .left-col .switch-btn,
         .left-col .switch-area {
@@ -466,7 +471,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/一级目录/">一级目录</a></li><li class="post-list-item"><a class="post-list-link" href="/Words/">Words</a></li><li class="post-list-item"><a class="post-list-link" href="/编号之美/">编号之美</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机网络/">计算机网络</a></li><li class="post-list-item"><a class="post-list-link" href="/知识整理术语表/">知识整理术语表</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机学习路线/">计算机学习路线</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机知识框架/">计算机知识框架</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全/">代码大全</a></li><li class="post-list-item"><a class="post-list-link" href="/命名规范/">命名规范</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构与算法/">数据结构与算法</a></li><li class="post-list-item"><a class="post-list-link" href="/Flask语法释义/">Flask语法释义</a></li><li class="post-list-item"><a class="post-list-link" href="/windows下用Flask开发微信公众号/">Windows环境下用Flask开发微信公众号</a></li><li class="post-list-item"><a class="post-list-link" href="/Hexo/">Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/Python知识结构/">Python知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/文件/">文件操作</a></li><li class="post-list-item"><a class="post-list-link" href="/NLTK/">NLTK</a></li><li class="post-list-item"><a class="post-list-link" href="/爬虫知识结构/">爬虫知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/Jupyter/">Jupyter</a></li><li class="post-list-item"><a class="post-list-link" href="/git/">git</a></li><li class="post-list-item"><a class="post-list-link" href="/GitHub/">GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/Docker/">Docker</a></li><li class="post-list-item"><a class="post-list-link" href="/swap-salary/">swap-salary</a></li><li class="post-list-item"><a class="post-list-link" href="/peak-index-in-a-mountain-array/">peak-index-in-a-mountain-array</a></li><li class="post-list-item"><a class="post-list-link" href="/number-of-recent-calls/">number-of-recent-calls</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-preorder-traversal/">n-ary-tree-preorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-postorder-traversal/">n-ary-tree-postorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/merge-two-binary-trees/">merge-two-binary-trees</a></li><li class="post-list-item"><a class="post-list-link" href="/search-in-a-binary-search-tree/">search-in-a-binary-search-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/k-closest-points-to-origin/">k-closest-points-to-origin</a></li><li class="post-list-item"><a class="post-list-link" href="/hamming-distance/">hamming-distance</a></li><li class="post-list-item"><a class="post-list-link" href="/self-dividing-numbers/">self-dividing-numbers</a></li><li class="post-list-item"><a class="post-list-link" href="/fibonacci-number/">fibonacci-number</a></li><li class="post-list-item"><a class="post-list-link" href="/di-string-match/">di-string-match</a></li><li class="post-list-item"><a class="post-list-link" href="/array-partition-i/">array-partition-i</a></li><li class="post-list-item"><a class="post-list-link" href="/twoSum/">twoSum</a></li><li class="post-list-item"><a class="post-list-link" href="/sort-array-by-parity-ii/">sort-array-by-parity-ii</a></li><li class="post-list-item"><a class="post-list-link" href="/univalued-binary-tree/">univalued-binary-tree</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/Words/">Words</a></li><li class="post-list-item"><a class="post-list-link" href="/顶级目录/">顶级目录</a></li><li class="post-list-item"><a class="post-list-link" href="/编号之美/">编号之美</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机网络/">计算机网络</a></li><li class="post-list-item"><a class="post-list-link" href="/知识整理术语表/">知识整理术语表</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机知识框架/">计算机知识框架</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机学习路线/">计算机学习路线</a></li><li class="post-list-item"><a class="post-list-link" href="/命名规范/">命名规范</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全/">代码大全</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-postorder-traversal/">n-ary-tree-postorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/merge-two-binary-trees/">merge-two-binary-trees</a></li><li class="post-list-item"><a class="post-list-link" href="/peak-index-in-a-mountain-array/">peak-index-in-a-mountain-array</a></li><li class="post-list-item"><a class="post-list-link" href="/search-in-a-binary-search-tree/">search-in-a-binary-search-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/number-of-recent-calls/">number-of-recent-calls</a></li><li class="post-list-item"><a class="post-list-link" href="/self-dividing-numbers/">self-dividing-numbers</a></li><li class="post-list-item"><a class="post-list-link" href="/swap-salary/">swap-salary</a></li><li class="post-list-item"><a class="post-list-link" href="/sort-array-by-parity-ii/">sort-array-by-parity-ii</a></li><li class="post-list-item"><a class="post-list-link" href="/univalued-binary-tree/">univalued-binary-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/di-string-match/">di-string-match</a></li><li class="post-list-item"><a class="post-list-link" href="/fibonacci-number/">fibonacci-number</a></li><li class="post-list-item"><a class="post-list-link" href="/array-partition-i/">array-partition-i</a></li><li class="post-list-item"><a class="post-list-link" href="/twoSum/">twoSum</a></li><li class="post-list-item"><a class="post-list-link" href="/k-closest-points-to-origin/">k-closest-points-to-origin</a></li><li class="post-list-item"><a class="post-list-link" href="/hamming-distance/">hamming-distance</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-preorder-traversal/">n-ary-tree-preorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构与算法/">数据结构与算法</a></li><li class="post-list-item"><a class="post-list-link" href="/Flask语法释义/">Flask语法释义</a></li><li class="post-list-item"><a class="post-list-link" href="/windows下用Flask开发微信公众号/">Windows环境下用Flask开发微信公众号</a></li><li class="post-list-item"><a class="post-list-link" href="/Hexo/">Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/Python知识结构/">Python知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/文件/">文件操作</a></li><li class="post-list-item"><a class="post-list-link" href="/NLTK/">NLTK</a></li><li class="post-list-item"><a class="post-list-link" href="/爬虫知识结构/">爬虫知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/Jupyter/">Jupyter</a></li><li class="post-list-item"><a class="post-list-link" href="/git/">git</a></li><li class="post-list-item"><a class="post-list-link" href="/GitHub/">GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/Docker/">Docker</a></li></ul>
 
 
   
@@ -536,9 +541,9 @@
     <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
     <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
-    <a href="/archives/" title="回总目录"><i class="fa fa-list"></i></a>
-    <a href="/" title="回到首页"><i class="fa fa-bank"></i></a>
-    <a href="/tags/" title="回到首页"><i class="fa fa-ils"></i></a>
+    <a href="/archives/" title="优先级别"><i class="fa fa-list"></i></a>
+    <a href="/" title="返回首页"><i class="fa fa-bank"></i></a>
+    <a href="/tags/" title="看标签云"><i class="fa fa-ils"></i></a>
 </div>
 <script>
     // Open in New Window
