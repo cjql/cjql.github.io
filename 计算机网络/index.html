@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="CJ">
+<meta name="renderer" content="webkit">
+<meta name="google" value="notranslate">
+
+
+
+<meta name="description" content="HTTP协议https://developer.mozilla.org/en-US/docs/Web/HTTPhttps://www.w3cschool.cn/http/a96bxfml.htmlhttps://devdocs.io/http/  HTTP协议（HyperText Transfer Protocol，超文本传输协议）是用于从WWW服务器传输超文本到本地浏览器的传送协议。 它可以使浏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络">
+<meta property="og:url" content="https://cjql.github.io/计算机网络/index.html">
+<meta property="og:site_name" content="CJ">
+<meta property="og:description" content="HTTP协议https://developer.mozilla.org/en-US/docs/Web/HTTPhttps://www.w3cschool.cn/http/a96bxfml.htmlhttps://devdocs.io/http/  HTTP协议（HyperText Transfer Protocol，超文本传输协议）是用于从WWW服务器传输超文本到本地浏览器的传送协议。 它可以使浏">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-04-30T09:42:45.422Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="计算机网络">
+<meta name="twitter:description" content="HTTP协议https://developer.mozilla.org/en-US/docs/Web/HTTPhttps://www.w3cschool.cn/http/a96bxfml.htmlhttps://devdocs.io/http/  HTTP协议（HyperText Transfer Protocol，超文本传输协议）是用于从WWW服务器传输超文本到本地浏览器的传送协议。 它可以使浏">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternative" href="/atom.xml" title="CJ" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/resources/favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/yellow/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>计算机网络 | CJ</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?a4938c90e05043bd9774ff12368e45aa";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/resources/apple-touch-icon.png" class="animated zoomIn">
+        </a>
+        <!-- <hgroup>
+          <h1 class="header-author"><a href="/">CJ</a></h1>
+        </hgroup> -->
+
+        
+        <p class="header-subtitle">cs</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/archives/">时间轴</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" href="https://github.com/" title="GitHub"></a>
+                            
+                                <a class="fa 豆瓣" href="https://book.douban.com/" title="豆瓣"></a>
+                            
+                                <a class="fa Twitter" href="//twitter.com/" title="Twitter"></a>
+                            
+                                <a class="fa StackOverflow" href="https://stackoverflow.com/" title="StackOverflow"></a>
+                            
+                                <a class="fa Flickr" href="https://www.flickr.com/" title="Flickr"></a>
+                            
+                                <a class="fa 博客园" href="https://www.cnblogs.com/" title="博客园"></a>
+                            
+                                <a class="fa CSDN" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">CJ</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/resources/apple-touch-icon.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">CJ</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">cs</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/archives/">时间轴</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/" title="GitHub"></a>
+                            
+                                <a class="fa 豆瓣" target="_blank" href="https://book.douban.com/" title="豆瓣"></a>
+                            
+                                <a class="fa Twitter" target="_blank" href="//twitter.com/" title="Twitter"></a>
+                            
+                                <a class="fa StackOverflow" target="_blank" href="https://stackoverflow.com/" title="StackOverflow"></a>
+                            
+                                <a class="fa Flickr" target="_blank" href="https://www.flickr.com/" title="Flickr"></a>
+                            
+                                <a class="fa 博客园" target="_blank" href="https://www.cnblogs.com/" title="博客园"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-计算机网络" class="article article-type-post" itemscope="" itemprop="blogPost">
+    
+      <div class="article-meta">
+        <a href="/计算机网络/" class="article-date">
+      <time datetime="2100-12-30T16:00:00.000Z" itemprop="datePublished">2100-12-31</time>
+</a>
+
+
+      </div>
+    
+    <div class="article-inner">
+      
+        <input type="hidden" class="isFancy">
+      
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      计算机网络
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-info article-info-post">
+          
+
+          
+          <div class="clearfix"></div>
+        </div>
+        
+      
+      <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+          <h2 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h2><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTTP</a><br><a href="https://www.w3cschool.cn/http/a96bxfml.html" target="_blank" rel="noopener">https://www.w3cschool.cn/http/a96bxfml.html</a><br><a href="https://devdocs.io/http/" target="_blank" rel="noopener">https://devdocs.io/http/</a></p>
+<ul>
+<li>HTTP协议（HyperText Transfer Protocol，超文本传输协议）是用于从WWW服务器传输超文本到本地浏览器的传送协议。</li>
+<li>它可以使浏览器更加高效，减少网络传输。它不仅保证计算机正确快速地传输超文本文档，还确定传输文档中的哪一部分，以及哪部分内容首先显示（如文本先于图形）等。</li>
+<li>Python爬虫开发，主要是和HTTP协议打交道。 <h2 id="HTTP请求过程"><a href="#HTTP请求过程" class="headerlink" title="HTTP请求过程"></a>HTTP请求过程</h2></li>
+<li>HTTP协议采取的是请求响应模型及其示图。</li>
+<li>HTTP协议永远都是客户端发起请求，服务器回送响应。</li>
+<li>HTTP协议是一个无状态的协议，同一个客户端的这次请求和上次请求没有对应关系。</li>
+<li>一次HTTP操作称为一个事务，其执行过程可分为四步：<br><strong> 首先客户端与服务器需要建立连接，例如单击某个超链接，HTTP的工作就开始了。
+</strong> 建立连接后，客户端发送一个请求给服务器，请求方式的格式为：统一资源标识符（URL）、协议版本号，后边是MIME信息，包括请求修饰符、客户机信息和可能的内容。<br><strong> 服务器接到请求后，给予相应的响应信息，其格式为一个状态行，包括信息的协议版本号、一个成功或错误的代码，后边是MIME信息，包括服务器信息、实体信息和可能的内容。
+</strong> 客户端接收服务器所返回的信息，通过浏览器将信息显示在用户的显示屏上，然后客户端与服务器断开连接。<br>如果以上过程中的某一步出现错误，那么产生错误的信息将返回到客户端，在显示屏输出，这些过程是由HTTP协议自己完成的。 <h2 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h2>当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。在浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。HTTP状态码主要是是为了标识此次HTTP请求的运行状态。<br>HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型。</li>
+<li>200——请求成功。</li>
+<li>301——资源（网页等）被永久转移到其他URL。</li>
+<li>404——请求的资源（网页等）不存在。</li>
+<li>500——内部服务器错误。<br>HTTP头信息<br>[<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers</a> mozilla]</li>
+</ul>
+<h2 id="IPC几种通信方式-进程间的通信方式"><a href="#IPC几种通信方式-进程间的通信方式" class="headerlink" title="IPC几种通信方式(进程间的通信方式)"></a>IPC几种通信方式(进程间的通信方式)</h2><p>管道(pipe)<br>管道是一种半双工的通信方式，数据只能单向流动，而且只能在具有亲缘关系的进程间使用。进程的亲缘关系通常是指父子进程关系。<br>管道是单向的、先进先出的、无结构的、固定大小的字节流，它把一个进程的标准输出和另一个进程的标准输入连接在一起。写进程在管道的尾端写入数据，读进程在管道的首端读出数据。数据读出后将从管道中移走，其它读进程都不能再读到这些数据。<br>管道有三种<br><em>普通管道。有两个限制：一是只支持半双工通信方式，即只能单向传输；二是只能在父子进程之间使用；
+</em>流管道。去除第一个限制，支持双向传输；<br>*命名管道。去除第二个限制，可以在不相关进程之间进行通信。<br>命名管道(namedpipe)<br>命名管道也是半双工的通信方式，它克服了管道没有名字的限制，并且它允许无亲缘关系进程间的通信。命令管道在文件系统中有对应的文件名，命名管道通过命令mkfifo或系统调用mkfifo来创建。MicrosoftSQLServer数据库默认安装后的本地连接使用的就是命名管道。MySQL在Window环境下，如果需要两个进程在同一台服务器上通信可以使用命名管道，通过–enable-named-pipe选项设置。<br>信号量(semophore)<br>信号量是一个计数器，可以用来控制多个进程对共享资源的访问。它常作为一种锁机制，防止某进程正在访问共享资源时，其他进程也访问该资源。因此，主要作为进程间以及同一进程内不同线程之间的同步手段。<br>消息队列(messagequeue)<br>消息队列是由消息的链表结构实现，存放在内核中并由消息队列标识符标识。有足够权限的进程可以向队列中添加消息，被赋予读权限的进程则可以读走队列中的消息。消息队列克服了信号传递信息少、管道只能承载无格式字节流以及缓冲区大小受限等缺点。<br>信号(sinal)<br>信号是一种比较复杂的通信方式，用于通知接收进程某个事件已经发生。除了用于进程通信外，进程还可以发送信号给进程本身。<br>共享内存(sharedmemory)<br>共享内存就是映射一段能被其他进程所访问的内存，这段共享内存由一个进程创建，但多个进程都可以访问。共享内存是最快的IPC方式，它是针对其他进程间通信方式运行效率低而专门设计的。它往往与其他通信机制，如信号量配合使用，来实现进程间的同步和通信。MySQL内部通信也使用了共享内存的方式，可以通过配置文件添加–shared-memory实现<br>套接字(socket)<br>也是一种进程间通信机制，与其他通信机制不同的是，它可用于不同机器间的进程通信。</p>
+
+        
+      </div>
+      
+    </div>
+    
+      
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/计算机网络/">计算机网络</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
+        <p><span>优先级别:</span>2100-12-31</p>
+        <p><span>最后更新:</span>2020-04-30, 17:42</p>
+        
+            <p>
+                <span>更新历史:</span>
+                <i class="fa fa-github"></i>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/计算机网络.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>                
+                <i class="fa fa-check-square-o"></i>
+                <a href="https://github.com/cjql/blog/edit/master/source/_posts/计算机网络.md" title="直接在线编辑" target="_blank">Edit</a>
+                <i class="fa fa-github-alt"></i>
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/计算机网络.md" title="查看文章有关更新记录" target="_blank">History</a>
+                <i class="fa fa-file-text-o"></i>	
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/计算机网络.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank">mdRaw</a>
+                <i class="fa fa-file-movie-o"></i>
+                <a href="https://github.com/cjql/blog/blob/master/source/_posts/计算机网络.md" title="GitHub查看" target="_blank">NormalView</a>
+            </p>
+        
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/计算机网络/" title="计算机网络">https://cjql.github.io/计算机网络/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/计算机网络/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+      
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/编号之美/">
+                    编号之美
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/知识整理术语表/">
+                    知识整理术语表
+                </a>
+            </div>
+        
+    </nav>
+
+    
+  </article>
+  
+  
+  
+  
+  
+  
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP协议"><span class="toc-text">HTTP协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP请求过程"><span class="toc-text">HTTP请求过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP状态码"><span class="toc-text">HTTP状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IPC几种通信方式-进程间的通信方式"><span class="toc-text">IPC几种通信方式(进程间的通信方式)</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+  
+  
+  
+  
+      
+  
+  
+  
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/编号之美/" title="上一篇: 编号之美">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/知识整理术语表/" title="下一篇: 知识整理术语表">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/一级目录/">一级目录</a></li><li class="post-list-item"><a class="post-list-link" href="/Words/">Words</a></li><li class="post-list-item"><a class="post-list-link" href="/编号之美/">编号之美</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机网络/">计算机网络</a></li><li class="post-list-item"><a class="post-list-link" href="/知识整理术语表/">知识整理术语表</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机知识框架/">计算机知识框架</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机学习路线/">计算机学习路线</a></li><li class="post-list-item"><a class="post-list-link" href="/命名规范/">命名规范</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全/">代码大全</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构与算法/">数据结构与算法</a></li><li class="post-list-item"><a class="post-list-link" href="/Flask语法释义/">Flask语法释义</a></li><li class="post-list-item"><a class="post-list-link" href="/windows下用Flask开发微信公众号/">Windows环境下用Flask开发微信公众号</a></li><li class="post-list-item"><a class="post-list-link" href="/Hexo/">Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/Python知识结构/">Python知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/文件/">文件操作</a></li><li class="post-list-item"><a class="post-list-link" href="/NLTK/">NLTK</a></li><li class="post-list-item"><a class="post-list-link" href="/爬虫知识结构/">爬虫知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/Jupyter/">Jupyter</a></li><li class="post-list-item"><a class="post-list-link" href="/git/">git</a></li><li class="post-list-item"><a class="post-list-link" href="/GitHub/">GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/Docker/">Docker</a></li><li class="post-list-item"><a class="post-list-link" href="/k-closest-points-to-origin/">k-closest-points-to-origin</a></li><li class="post-list-item"><a class="post-list-link" href="/swap-salary/">swap-salary</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-preorder-traversal/">n-ary-tree-preorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/search-in-a-binary-search-tree/">search-in-a-binary-search-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/number-of-recent-calls/">number-of-recent-calls</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-postorder-traversal/">n-ary-tree-postorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/univalued-binary-tree/">univalued-binary-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/peak-index-in-a-mountain-array/">peak-index-in-a-mountain-array</a></li><li class="post-list-item"><a class="post-list-link" href="/merge-two-binary-trees/">merge-two-binary-trees</a></li><li class="post-list-item"><a class="post-list-link" href="/sort-array-by-parity-ii/">sort-array-by-parity-ii</a></li><li class="post-list-item"><a class="post-list-link" href="/fibonacci-number/">fibonacci-number</a></li><li class="post-list-item"><a class="post-list-link" href="/hamming-distance/">hamming-distance</a></li><li class="post-list-item"><a class="post-list-link" href="/di-string-match/">di-string-match</a></li><li class="post-list-item"><a class="post-list-link" href="/array-partition-i/">array-partition-i</a></li><li class="post-list-item"><a class="post-list-link" href="/twoSum/">twoSum</a></li><li class="post-list-item"><a class="post-list-link" href="/self-dividing-numbers/">self-dividing-numbers</a></li></ul>
+
+
+  
+  
+      <script>
+          
+      </script>
+  </div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                2018-2020 <i class="fa fa-heart"></i> CJ
+            </div>
+            <div class="footer-right">
+                Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
+            </span></div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+    <script src="/js/GithubRepoWidget.js"></script>
+
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 4;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+             github: ".github-widget a", 
+            
+             post: ".article-entry a[href]", 
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

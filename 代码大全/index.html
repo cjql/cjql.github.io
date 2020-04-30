@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="CJ">
+<meta name="renderer" content="webkit">
+<meta name="google" value="notranslate">
+
+
+
+<meta name="description" content="代码大全笔记。好的工匠知道完成某项工作要用哪样工具。也知道该怎样正确地使用。编程方面的知识学得越多。你脑中的工具箱中就会有更多的分析工具。也会知道该在何时用这些工具。以及怎样正确地使用它们。在软件领域里。专业的咨询人员有时会让你专用某种软件开发方法而远离其他方法。这样并不妥当。因为当你百分之百地依赖于某一方法论时。你就只会用一种方法去看世界了。每位程序员都有许多工具。但并不存在任何一个能适用于所有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="代码大全">
+<meta property="og:url" content="https://cjql.github.io/代码大全/index.html">
+<meta property="og:site_name" content="CJ">
+<meta property="og:description" content="代码大全笔记。好的工匠知道完成某项工作要用哪样工具。也知道该怎样正确地使用。编程方面的知识学得越多。你脑中的工具箱中就会有更多的分析工具。也会知道该在何时用这些工具。以及怎样正确地使用它们。在软件领域里。专业的咨询人员有时会让你专用某种软件开发方法而远离其他方法。这样并不妥当。因为当你百分之百地依赖于某一方法论时。你就只会用一种方法去看世界了。每位程序员都有许多工具。但并不存在任何一个能适用于所有">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-04-30T09:42:45.421Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="代码大全">
+<meta name="twitter:description" content="代码大全笔记。好的工匠知道完成某项工作要用哪样工具。也知道该怎样正确地使用。编程方面的知识学得越多。你脑中的工具箱中就会有更多的分析工具。也会知道该在何时用这些工具。以及怎样正确地使用它们。在软件领域里。专业的咨询人员有时会让你专用某种软件开发方法而远离其他方法。这样并不妥当。因为当你百分之百地依赖于某一方法论时。你就只会用一种方法去看世界了。每位程序员都有许多工具。但并不存在任何一个能适用于所有">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternative" href="/atom.xml" title="CJ" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/resources/favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/yellow/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>代码大全 | CJ</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?a4938c90e05043bd9774ff12368e45aa";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/resources/apple-touch-icon.png" class="animated zoomIn">
+        </a>
+        <!-- <hgroup>
+          <h1 class="header-author"><a href="/">CJ</a></h1>
+        </hgroup> -->
+
+        
+        <p class="header-subtitle">cs</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/archives/">时间轴</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" href="https://github.com/" title="GitHub"></a>
+                            
+                                <a class="fa 豆瓣" href="https://book.douban.com/" title="豆瓣"></a>
+                            
+                                <a class="fa Twitter" href="//twitter.com/" title="Twitter"></a>
+                            
+                                <a class="fa StackOverflow" href="https://stackoverflow.com/" title="StackOverflow"></a>
+                            
+                                <a class="fa Flickr" href="https://www.flickr.com/" title="Flickr"></a>
+                            
+                                <a class="fa 博客园" href="https://www.cnblogs.com/" title="博客园"></a>
+                            
+                                <a class="fa CSDN" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">CJ</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/resources/apple-touch-icon.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">CJ</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">cs</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/archives/">时间轴</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/" title="GitHub"></a>
+                            
+                                <a class="fa 豆瓣" target="_blank" href="https://book.douban.com/" title="豆瓣"></a>
+                            
+                                <a class="fa Twitter" target="_blank" href="//twitter.com/" title="Twitter"></a>
+                            
+                                <a class="fa StackOverflow" target="_blank" href="https://stackoverflow.com/" title="StackOverflow"></a>
+                            
+                                <a class="fa Flickr" target="_blank" href="https://www.flickr.com/" title="Flickr"></a>
+                            
+                                <a class="fa 博客园" target="_blank" href="https://www.cnblogs.com/" title="博客园"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-代码大全" class="article article-type-post" itemscope="" itemprop="blogPost">
+    
+      <div class="article-meta">
+        <a href="/代码大全/" class="article-date">
+      <time datetime="2100-12-27T16:00:00.000Z" itemprop="datePublished">2100-12-28</time>
+</a>
+
+
+      </div>
+    
+    <div class="article-inner">
+      
+        <input type="hidden" class="isFancy">
+      
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      代码大全
+    </h1>
+  
+
+        </header>
+        
+        <div class="article-info article-info-post">
+          
+
+          
+          <div class="clearfix"></div>
+        </div>
+        
+      
+      <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+          <p>代码大全笔记。<br>好的工匠知道完成某项工作要用哪样工具。也知道该怎样正确地使用。<br>编程方面的知识学得越多。你脑中的工具箱中就会有更多的分析工具。也会知道该在何时用这些工具。以及怎样正确地使用它们。<br>在软件领域里。专业的咨询人员有时会让你专用某种软件开发方法而远离其他方法。这样并不妥当。因为当你百分之百地依赖于某一方法论时。你就只会用一种方法去看世界了。<br>每位程序员都有许多工具。但并不存在任何一个能适用于所有工作的工具。因地制宜地选择正确工具是成为能有效编程的程序员的关键。<br>某些情况下。对于你所面临的问题还有其他更好的方法。你可能错失良机。这种工具箱隐喻能够帮助你把所有的方法、技术以及技巧留在脑海中—合适的时候即可拿来就用。<br>每个层次的注意事项。编程思维、编程风格、编程工艺、软件工艺、编程技术。<br>仔细的准备是必要的。而大型项目和小型项目之间也是有差异的。<br>事先做好计划能减小很多压力，让你的经验（曾经遇到的问题）来引导你吧。<br>创作引人注目的商业案例、<br>分析出全面而准确的需求、<br>创建高质量的架构</p>
+<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>使用高质量的实践方法是那些能创造高质量软件的程序员的共性。<br>这些高质量的实践方法在项目的初期、中期、末期都强调质量。<br><a id="more"></a></p>
+<h2 id="阅读顺序"><a href="#阅读顺序" class="headerlink" title="阅读顺序"></a>阅读顺序</h2><ul>
+<li>低年级学生：第11章变量名的力量</li>
+<li>初级程序员：第18章表驱动法。将复杂的逻辑判断转换为查表。从而简化代码的编写与维护。另外。本章中的一个示例说明了。面向对象设计并不只要因为它是面向对象。就一定会好于其他的设计。</li>
+<li>自学编程的人。第7章高质量的子程序。本章详细讨论了子程序的命名和参数选择等问题。其中对子程序最佳长度的讨论颇有借鉴意义</li>
+<li>高年级学生：第8章防御式编程。本章讲述如何面对严酷的充斥非法数据的真实世界。在遇到绝不会发生的事件和其他程序员犯下的错误时如何保护自己。</li>
+<li>高级程序员：第4章关键的构建决策。本章关注的焦点是程序员和技术带头人个人必须(直接或间接)负责的项目准备工作</li>
+<li>项目经理：第33章个人性格。程序设计是一项纯粹的脑力劳动。本章对挑选和培养优秀程序员提出了建议。</li>
+<li>制定编码标准的人：第32章自说明代码。本章中有一段关于注释的精彩对话。它可能会改变您在制定编码标准时对注释的要求。</li>
+<li>喜欢参与网上争论的人。第13。3节全局数据和第17。3节goto语句。听听学术界在这些问题上的争论也挺有意思。</li>
+</ul>
+<h2 id="核对表"><a href="#核对表" class="headerlink" title="核对表"></a>核对表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">前期准备</span><br><span class="line">需求</span><br><span class="line">架构</span><br><span class="line">主要的构建实践</span><br><span class="line">软件构造中的设计</span><br><span class="line">质量</span><br><span class="line">类的质量</span><br><span class="line">高质量的子程序</span><br><span class="line">防御式编程</span><br><span class="line">伪代码编程过程</span><br><span class="line">质量保证计划</span><br><span class="line">变量</span><br><span class="line">使用数据的一般事项</span><br><span class="line">变量命名</span><br><span class="line">基本数据类型</span><br><span class="line">使用不常见数据类型的注意事项</span><br><span class="line">组织直线型代码</span><br><span class="line">控制语句</span><br><span class="line">使用条件语句</span><br><span class="line">循环</span><br><span class="line">不常见的控制结构</span><br><span class="line">控制结构相关事宜</span><br><span class="line">表驱动法</span><br><span class="line">测试</span><br><span class="line">有效的结对编程</span><br><span class="line">有效的详查</span><br><span class="line">测试用例</span><br><span class="line">关于调试的建议</span><br><span class="line">重构</span><br><span class="line">重构的理由</span><br><span class="line">重构总结</span><br><span class="line">安全的重构</span><br><span class="line">代码调整策略</span><br><span class="line">代码调整方法</span><br><span class="line">工具</span><br><span class="line">配置管理</span><br><span class="line">集成</span><br><span class="line">编程工具</span><br><span class="line">美观</span><br><span class="line">布局</span><br><span class="line">自说明代码</span><br><span class="line">好的注释技术</span><br></pre></td></tr></table></figure>
+<h2 id="定义问题"><a href="#定义问题" class="headerlink" title="定义问题"></a>定义问题</h2><p>(problemdefinition)<br>一开始就把事情做好是最合算的。</p>
+<ul>
+<li>架构师吃掉需求。设计师吃掉架构。而程序员则消化设计。程序员是软件食物链的最后一环。</li>
+<li>如果需求被污染了。那么它就会污染架构。而架构又会污染构建。</li>
+<li>这样会导致程序员脾气暴躁、营养失调，开发出的软件具有放射性污染，而且周身都是缺陷。<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2>(requirementsdevelopment)。潜心分析需求<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">计划、要求并且设计一个高质量的产品。</span><br><span class="line">需求、客户沟通、捕捉需求、动态需求、弄清哪些是最关键的需求</span><br><span class="line">弄清架构要素</span><br><span class="line">定义问题、要求、辨明当时的形势</span><br><span class="line">如果你正为某个高度迭代的项目做计划</span><br><span class="line">定下解决方案的规格（每个阶段）：规模、时间、人数、计算机台数</span><br><span class="line">设计解决方案的时候做出这种计划</span><br><span class="line">用Aztek的生产过程未必能造出好的劳斯莱斯。那么你从头开始做计划。</span><br><span class="line">设计轮廓、架构、设计、程序。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="必备工具"><a href="#必备工具" class="headerlink" title="必备工具"></a>必备工具</h2><p>在开始建造房子之前。审视：<br>蓝图(包含所有细节信息的设计详图)<br>全部(建筑)许可证<br>测量房屋的地基<br>CaperJones是SoftwareProductivityResearch(软件生产率研究)的首席科学家。他回顾20年的软件研究。指出他和同事见过不止<br>700种不同的编程语言。<br>40种收集需求的方法、<br>50种进行软件设计的方法、<br>30种针对项目的测试方法(Jones2003)。<br>三种主调的无数变奏：项目类型与典型实践</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>准备工作的中心目标就是降低风险:一个好的项目规划者能够尽可能早地将主要的风险清除掉。以使项目的大部分工作能够尽可能平稳地进行。<br>目前。软件开发中最常见的项目风险是糟糕的需求分析和糟糕的项目计划。<br>因此准备工作就倾向于集中改进需求分析和项目规划。<br>构建活动的准备工作不是一门精密科学。要根据每一个项目的特点来选择特定的降低风险的方法。<br>具体细节随项目的不同。会有非常大的变化。</p>
+<ul>
+<li>为什么合适的准备工作是非常重要的</li>
+<li>尽早查找并修正错误：<a href="https://upload-images.jianshu.io/upload_images/6908911-73bdbfba79a49a39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">缺陷检测成本</a></li>
+<li>如何判定，是否已经准备好开始构建工作了<h2 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h2>你对<code>如何进行构建</code>的理解程度，决定了你这名程序员的优秀程度。构建活动的质量对软件的质量有着实质性的影响<br>构建(construction)、建筑工人(constructionworkers)、硬纸板(constructionpaper)<br>按照一般的用法。构建是指建设的过程。构建过程可能包含有计划、设计、检查工作的一些方面。多数时候，构建就是指创建事物过程中动手的那些部分。<br>正式和非正式项目的红头文件。构建有时也被认为是编码(coding)或编程(programming)。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">规划构建(constructionplanning)</span><br><span class="line">    软件构建</span><br><span class="line">        软件开发的核心活动</span><br><span class="line">        每个项目中唯一一项必不可少的工作。</span><br><span class="line">    构建实践</span><br><span class="line">        在构建过程中，辨明当时的形势如何。</span><br><span class="line">        在你开始构建的时候。项目前期工作已经或多或少为这个项目的成功或失败打下了基础。</span><br><span class="line">        如果你看到失败的乌云已经出现在地平线上时，就退回到项目的前期工作吧。</span><br><span class="line">软件架构(softwarearchitecture)或高层设计(highleveldesign)。精心设计架构</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="规划"><a href="#规划" class="headerlink" title="规划"></a>规划</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">项目规划。详细设计(detaileddesign)。活动、技术和诀窍</span><br><span class="line">    代码格式</span><br><span class="line">    代码布局</span><br><span class="line">    设计方法</span><br><span class="line">    用户界面设计、组件</span><br><span class="line">代码可读性、编码(coding)</span><br><span class="line">    设计并编写类(class)和子程序(routine)、命名和质量。构建细节：创建类的步骤</span><br><span class="line">    创建并命名变量(variable)和具名常量(namedconstant)。</span><br><span class="line">    语句。组织语句块。选择控制结构(controlstructure)。</span><br><span class="line">    容器类(containerclasses)、科学计算函数、数据库访问组件</span><br><span class="line">    数据类型</span><br><span class="line">    编码标准</span><br></pre></td></tr></table></figure>
+<h2 id="方案选择"><a href="#方案选择" class="headerlink" title="方案选择"></a>方案选择</h2><p>无论何种项目。都会对准备工作进行剪裁。使之符合项目的特定需要;在构建活动开始之前。准备工作要做周全：<br>建造摩天大楼用一种方法。<br>建造普通住宅用另一种方法。<br>建造犬舍用第三种方法。<br><a href="https://uploadimages.jianshu.io/upload_images/6908911845325aae45e6355.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">项目种类与典型实践</a><br><a href="https://uploadimages.jianshu.io/upload_images/69089115b9431db2a2cfc27.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">项目种类与典型实践</a><br>高迭代式与序列式<br>性命攸关的系统往往要求采用更加序列式的方法—需求稳定是确保超高等级的可靠性的必备条件之<br><a href="https://uploadimages.jianshu.io/upload_images/690891122da391925683288.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">无准备的序列式与迭代式</a><br><a href="https://uploadimages.jianshu.io/upload_images/690891139c48db18b0494d2.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">有装备的序列式与迭代式</a><br><a href="https://uploadimages.jianshu.io/upload_images/6908911e053cbb9582d5047.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">方案选择</a><br><a href="https://uploadimages.jianshu.io/upload_images/6908911f4a24687627fef82.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">方案选择</a><br>UpstreamPrerequisites<br>MeasureTwice。CutOnce<br>构建活动差不多占整个项目成本的65%。<br>有的软件项目最终会进行两三次(甚至更多)构建。<br>将项目中最昂贵的部分执行两遍。这无论在软件行业还是在其他行业都是愚蠢的主意。<br><a href="https://uploadimages.jianshu.io/upload_images/690891112ba8a06a07852de.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">构建活动的地位示意图</a><br><a href="https://uploadimages.jianshu.io/upload_images/6908911c5bab172a8062ff9.png?imageMogr2/autoorient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">构建的重要性</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">项目管理方法</span><br><span class="line">    分阶段(phase)进行、还是迭代式(interation)进行。</span><br><span class="line">    新语言、新开发过程、新方法论</span><br><span class="line">    软件项目</span><br><span class="line">    有没有更好的工具、启发、启发式、探索式、受益</span><br><span class="line">    灵活轻量级的开发方法</span><br><span class="line">    严格重量级的开发方法</span><br><span class="line">    演进式交付(Evolutionary Delivery)</span><br><span class="line">    敏捷编程(agile programming)</span><br><span class="line">    调用别人的库，如砖块。自己编写那些现成的代码通常是没有意义的</span><br><span class="line">    自己编写库，如自己定制的高档家具</span><br><span class="line">    适当的多层次规划对编程是有好处的。</span><br><span class="line">    增量式开发：先做出一个简单可行版本。一次增加一小部分代码，直到得到一个完全可以工作的系统</span><br><span class="line">    超大型的项目要更高级别的规划</span><br><span class="line">    精心计划不意味事无巨细的计划或过度计划</span><br><span class="line">    在后期改变细节的能力。改变不会出重大事故。安全、时间成本和物资成本</span><br><span class="line">    核查。留有余地以保证安全。</span><br><span class="line">    对结构进行超出常规的规划和建设（over-engineered）</span><br></pre></td></tr></table></figure></p>
+<h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><p>(debugging)、测试、系统测试(systemtesting)、开发者测试(developer testing)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">系统测试。软件质量保证。</span><br><span class="line">测试只是质量保证策略的一部分。而且不是最有影响的部分。</span><br><span class="line">测试是不可能检查出的缺陷</span><br><span class="line">制造了一个错误的产品</span><br><span class="line">使用错误的方法制造正确的产品</span><br><span class="line">这样的缺陷必须在测试之前解决。更确切地说是在构建活动之前。</span><br></pre></td></tr></table></figure></p>
+<pre><code>单元测试(unit testing)。确定如何测试所写的代码。
+集成测试(integration testing)
+测试用例
+什么是可行
+什么是不可行的
+脚踏实地测试
+</code></pre><h2 id="集成"><a href="#集成" class="headerlink" title="集成"></a>集成</h2><p>(Integration)。将单独开发的多个软件组件集成为一体</p>
+<h2 id="保障维护"><a href="#保障维护" class="headerlink" title="保障维护"></a>保障维护</h2><p>(correctivemaintenance)。风险防御、因地制宜<br>    评审开发团队其他成员的底层设计和代码。并让他们评审你的工作。<br>    润饰代码。仔细进行代码的格式化和注释<br>    调整代码(tuningcode)。让它更快、更省资源。</p>
+<h2 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h2><p>CapersJones发表的报告称：<br>一套100万行代码的软件系统<br>平均需要69种文档(1998)<br>需求规格文档一般有四五千页长<br>设计文档常常是需求的两三倍长<br>不太可能有哪个人能完全理解这种规模的项目的所有设计细节，甚至只是通读一遍都不那么容易。</p>
+<h2 id="重构"><a href="#重构" class="headerlink" title="重构"></a>重构</h2><pre><code>代码调优的技术和策略、评审、审查
+高质量软件。提高软件质量是降低开发成本的重要途径
+</code></pre><h2 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h2><p>在更短的时间内写出更棒的程序<br>用户的需求。项目的需求发生变动时帮助你成功地维护并修改已经开发出来的软件<br>开发效率。交付快，更快速地进行开发<br>预算不超<br>健壮、安全、漏洞少，遇到的问题更少。为什么会遇到那些问题。如何在将来避免它们。反复尝试和试错的结晶。<br>规范、弹性<br>掌控更大型的项目<br>优秀</p>
+<h2 id="过程隐喻"><a href="#过程隐喻" class="headerlink" title="过程隐喻"></a>过程隐喻</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">隐喻、类比、模型、概念化、泛型</span><br><span class="line">完整、充分</span><br><span class="line">春天播种了一个代码种子，希望秋天收获丰盛的代码</span><br><span class="line">播种、培育、耕作、小步前进</span><br><span class="line">生长、增量、迭代、累积、冲积层、珍珠、提炼</span><br><span class="line">growing、accretion、incremental、iterative、adaptive、evolutionary</span><br><span class="line">自适应、演进</span><br><span class="line">writing、building</span><br><span class="line">成果：速度和精读的提升、省时省力</span><br></pre></td></tr></table></figure>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="里程碑"><a href="#里程碑" class="headerlink" title="里程碑"></a>里程碑</h3><p>思维训练。高质量代码习惯。编程原则是超越特定语言语法的。<br>丰富的理论知识研究、当今的理论发展水平、前沿的开发实践。<br>编程经验、编程技术、行之有效的编程实践经验技术、反映实践状况的产品级代码。<br>软件开发领域、项目（管理）经验经验技巧、开发策略<br>项目思考。需求分析。实用、有效、强大。<br>行动策略。具体情况作出更正确的决策。避免反复陷入完全一样的战斗<br>实质地改善编程质量并提高工作效率。</p>
+<h3 id="名片"><a href="#名片" class="headerlink" title="名片"></a>名片</h3><p>畅销书作者<br>杂志主编<br>计算机科学与技术委员会（ComputerScienceandTechnologyBoard）<br>当艺术评论家聚在一起的时候。他们谈论的都是关于版式、结构以及意蕴之类的话题;而当真正的艺术家聚在起的时候。他们谈论的则是到哪儿才能买到更便宜的松节油。PablePN毕加索。</p>
+<h3 id="你在技术浪潮中的位置"><a href="#你在技术浪潮中的位置" class="headerlink" title="你在技术浪潮中的位置"></a>你在技术浪潮中的位置</h3><blockquote>
+<p>自学程序员、经验不足的程序员、学生⇒参加过正规训练的程序员⇒软件开发者⇒优秀程序员、经验丰富的程序员、内行⇒分析师、软件架构师、项目负责人⇒业界大师与教授、技术带头人、技术领导。有些教授并不实际编写产品代码。教授们写出来的技术内容对于学生们的项目而言还行得通。但他们通常不知道如何在完整规模的开发环境中施展这些技术。⇒知识与商业实践大咖。</p>
+</blockquote>
+<blockquote>
+<p>一般商业实践⇒学习并掌握不止一门语言是专业程序员职业生涯的分水岭⇒编程领域的大众技术、强大的软件开发技术、前卫的软件开发实践迅速发展⇒业界研究、学术成果、研究成果、专家经验⇒软件工程界软件开发领域⇒让那些关键性的研发成果现在就能为更多编程人员所用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">强大的编程技术已在学术论文和期刊里尘封了多年。</span><br><span class="line">软件业界以及学术界的研究人员已经发现了不少行之有效的实践经验</span><br><span class="line">足以解决自20世纪70年代以来编程领域中日益蔓延的大多数问题</span><br><span class="line">可是这些实践经验很少在高度专业化的技术期刊之外对外发表</span><br><span class="line">所以时至今日大多数编程的机构和组织还没能用上这些技术</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>有研究表明：一项研发成果从其诞生之日起，到进入商业实践阶段，通常要经历5到15年甚至更长的时间(RaghavanandChand1989;Rogers1995;Parnas199)。</p>
+<p>专业经验</p>
+<p>杂志上的文章<br>编程语言书籍<br>技术参考资料<br>其他软件著作</p>
+<h3 id="激动人心的项目"><a href="#激动人心的项目" class="headerlink" title="激动人心的项目"></a>激动人心的项目</h3><p>互联网、电影特技、医疗中的生命维持系统、航空、高速金融分析、科学研究、太空计划</p>
+<h3 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h3><ul>
+<li>ProfessionalSoftwareDevelopment。专业软件开发。Mcconnell2004第16章描述了专业技能培养计划。</li>
+<li>ThePsychologyofComputerProgramming。Weinberg1998，GeraldWeinberg的经典著作。</li>
+<li>硬件参考手册。Intel或Motorola的。</li>
+<li>函数手册。MicrosoftWindows或Linux操作系统的。</li>
+<li>RethinkingSystemsAnalysisndDesign。Weinberg1988。OntheOriginsofDesignerIntuition(论设计直觉的源泉)这一章。另一个关于软件方面的耕作的比喻。</li>
+<li>WhatSupportstheRoof。是什么撑起了天花板。Starr2003。深入阅读关于构建隐喻的引申。</li>
+<li>TheStructureofScientificRevolutions。THomasKuhn。科学变革的结构。隐喻、模型(model)以及范型(paradigm)中的试金石和金典。在一个达尔文周期中，科学理论如何相对于其他理论而诞生、发展并消亡的书。于1962年首次发布。奠定了科学哲学的基础。该书短小精悍。列举了大量科学中隐喻、模型以及范型间此消彼长的有趣示例。</li>
+<li>TheParadigmsofProgramming。Floyd.Robertw.编程范型。1978年图灵奖的颁奖演讲。这是一篇令人神往的关于软件开发中的模型的讨论。Floyd将Kuhn的理念用到了编程上。</li>
+<li>CommunicationsoftheACM(ACM通讯)。August1979。pp。455—460。</li>
+</ul>
+<p>Java编程入门<br>高级Java编程<br>高高级Java编程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WISCA综合症或者WIMP综合症:</span><br><span class="line">Why Isn&apos;t Sam Coding Anything?为什么Sam不在写代码</span><br><span class="line">Why Isn&apos;t Mary Programing?为什么Mary不在编程</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+      
+    </div>
+    
+      
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/代码大全/">代码大全</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
+        <p><span>优先级别:</span>2100-12-28</p>
+        <p><span>最后更新:</span>2020-04-30, 17:42</p>
+        
+            <p>
+                <span>更新历史:</span>
+                <i class="fa fa-github"></i>
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/代码大全.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>                
+                <i class="fa fa-check-square-o"></i>
+                <a href="https://github.com/cjql/blog/edit/master/source/_posts/代码大全.md" title="直接在线编辑" target="_blank">Edit</a>
+                <i class="fa fa-github-alt"></i>
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/代码大全.md" title="查看文章有关更新记录" target="_blank">History</a>
+                <i class="fa fa-file-text-o"></i>	
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/代码大全.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank">mdRaw</a>
+                <i class="fa fa-file-movie-o"></i>
+                <a href="https://github.com/cjql/blog/blob/master/source/_posts/代码大全.md" title="GitHub查看" target="_blank">NormalView</a>
+            </p>
+        
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/代码大全/" title="代码大全">https://cjql.github.io/代码大全/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/代码大全/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+      
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/命名规范/">
+                    命名规范
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/数据结构与算法/">
+                    数据结构与算法
+                </a>
+            </div>
+        
+    </nav>
+
+    
+  </article>
+  
+  
+  
+  
+  
+  
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#生命周期"><span class="toc-text">生命周期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#阅读顺序"><span class="toc-text">阅读顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核对表"><span class="toc-text">核对表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义问题"><span class="toc-text">定义问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#需求分析"><span class="toc-text">需求分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#必备工具"><span class="toc-text">必备工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构建"><span class="toc-text">构建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#规划"><span class="toc-text">规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案选择"><span class="toc-text">方案选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调试"><span class="toc-text">调试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集成"><span class="toc-text">集成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#保障维护"><span class="toc-text">保障维护</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文档"><span class="toc-text">文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重构"><span class="toc-text">重构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指标"><span class="toc-text">指标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过程隐喻"><span class="toc-text">过程隐喻</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#里程碑"><span class="toc-text">里程碑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#名片"><span class="toc-text">名片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#你在技术浪潮中的位置"><span class="toc-text">你在技术浪潮中的位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#激动人心的项目"><span class="toc-text">激动人心的项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展阅读"><span class="toc-text">扩展阅读</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+  
+  
+  
+  
+      
+  
+  
+  
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/命名规范/" title="上一篇: 命名规范">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/数据结构与算法/" title="下一篇: 数据结构与算法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/一级目录/">一级目录</a></li><li class="post-list-item"><a class="post-list-link" href="/Words/">Words</a></li><li class="post-list-item"><a class="post-list-link" href="/编号之美/">编号之美</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机网络/">计算机网络</a></li><li class="post-list-item"><a class="post-list-link" href="/知识整理术语表/">知识整理术语表</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机知识框架/">计算机知识框架</a></li><li class="post-list-item"><a class="post-list-link" href="/计算机学习路线/">计算机学习路线</a></li><li class="post-list-item"><a class="post-list-link" href="/命名规范/">命名规范</a></li><li class="post-list-item"><a class="post-list-link" href="/代码大全/">代码大全</a></li><li class="post-list-item"><a class="post-list-link" href="/数据结构与算法/">数据结构与算法</a></li><li class="post-list-item"><a class="post-list-link" href="/Flask语法释义/">Flask语法释义</a></li><li class="post-list-item"><a class="post-list-link" href="/windows下用Flask开发微信公众号/">Windows环境下用Flask开发微信公众号</a></li><li class="post-list-item"><a class="post-list-link" href="/Hexo/">Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/SQL/">SQL</a></li><li class="post-list-item"><a class="post-list-link" href="/Python知识结构/">Python知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/文件/">文件操作</a></li><li class="post-list-item"><a class="post-list-link" href="/NLTK/">NLTK</a></li><li class="post-list-item"><a class="post-list-link" href="/爬虫知识结构/">爬虫知识结构</a></li><li class="post-list-item"><a class="post-list-link" href="/Jupyter/">Jupyter</a></li><li class="post-list-item"><a class="post-list-link" href="/git/">git</a></li><li class="post-list-item"><a class="post-list-link" href="/GitHub/">GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/Docker/">Docker</a></li><li class="post-list-item"><a class="post-list-link" href="/k-closest-points-to-origin/">k-closest-points-to-origin</a></li><li class="post-list-item"><a class="post-list-link" href="/swap-salary/">swap-salary</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-preorder-traversal/">n-ary-tree-preorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/search-in-a-binary-search-tree/">search-in-a-binary-search-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/number-of-recent-calls/">number-of-recent-calls</a></li><li class="post-list-item"><a class="post-list-link" href="/n-ary-tree-postorder-traversal/">n-ary-tree-postorder-traversal</a></li><li class="post-list-item"><a class="post-list-link" href="/univalued-binary-tree/">univalued-binary-tree</a></li><li class="post-list-item"><a class="post-list-link" href="/peak-index-in-a-mountain-array/">peak-index-in-a-mountain-array</a></li><li class="post-list-item"><a class="post-list-link" href="/merge-two-binary-trees/">merge-two-binary-trees</a></li><li class="post-list-item"><a class="post-list-link" href="/sort-array-by-parity-ii/">sort-array-by-parity-ii</a></li><li class="post-list-item"><a class="post-list-link" href="/fibonacci-number/">fibonacci-number</a></li><li class="post-list-item"><a class="post-list-link" href="/hamming-distance/">hamming-distance</a></li><li class="post-list-item"><a class="post-list-link" href="/di-string-match/">di-string-match</a></li><li class="post-list-item"><a class="post-list-link" href="/array-partition-i/">array-partition-i</a></li><li class="post-list-item"><a class="post-list-link" href="/twoSum/">twoSum</a></li><li class="post-list-item"><a class="post-list-link" href="/self-dividing-numbers/">self-dividing-numbers</a></li></ul>
+
+
+  
+  
+      <script>
+          
+      </script>
+  </div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                2018-2020 <i class="fa fa-heart"></i> CJ
+            </div>
+            <div class="footer-right">
+                Thanks for <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题 v3.5">Yelee</a><span> and Moxfive <i class="fa fa-copyright"></i> 
+            </span></div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+    <script src="/js/GithubRepoWidget.js"></script>
+
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 4;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+             github: ".github-widget a", 
+            
+             post: ".article-entry a[href]", 
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
