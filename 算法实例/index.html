@@ -18,18 +18,18 @@
 
 
 
-<meta name="description" content="汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。hamming-distance 英文 中文 收获bin , ^ , count">
-<meta name="keywords" content="计算机,算法,LeetCode">
+<meta name="description" content="各个算法小实例。">
+<meta name="keywords" content="计算机,算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hamming-distance">
-<meta property="og:url" content="https://cjql.github.io/hamming-distance/index.html">
+<meta property="og:title" content="算法实例">
+<meta property="og:url" content="https://cjql.github.io/算法实例/index.html">
 <meta property="og:site_name" content="CJ">
-<meta property="og:description" content="汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。hamming-distance 英文 中文 收获bin , ^ , count">
+<meta property="og:description" content="各个算法小实例。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-05-01T16:02:08.622Z">
+<meta property="og:updated_time" content="2020-05-02T07:33:06.553Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hamming-distance">
-<meta name="twitter:description" content="汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。hamming-distance 英文 中文 收获bin , ^ , count">
+<meta name="twitter:title" content="算法实例">
+<meta name="twitter:description" content="各个算法小实例。">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -61,7 +61,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>hamming-distance | CJ</title>
+<title>算法实例 | CJ</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -259,11 +259,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-hamming-distance" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-算法实例" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
-        <a href="/hamming-distance/" class="article-date">
-      <time datetime="8099-12-31T16:00:00.000Z" itemprop="datePublished">8100-01-01</time>
+        <a href="/算法实例/" class="article-date">
+      <time datetime="9997-12-28T16:00:00.000Z" itemprop="datePublished">9997-12-29</time>
 </a>
 
 
@@ -278,7 +278,7 @@
           
   
     <h1 class="article-title" itemprop="name">
-      hamming-distance
+      算法实例
     </h1>
   
 
@@ -289,7 +289,7 @@
 
           
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
     </div>
 
           <div class="clearfix"></div>
@@ -300,11 +300,19 @@
         
         
             
-          <p>汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。<br>hamming-distance <a href="https://leetcode.com/problems/hamming-distance/" target="_blank" rel="noopener">英文</a> <a href="https://leetcode-cn.com/problems/hamming-distance/" target="_blank" rel="noopener">中文</a></p>
-<h2 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h2><p><code>bin</code> , <code>^</code> , <code>count</code><br><a id="more"></a></p>
-<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hammingDistance</span><span class="params">(self, x, y)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type x: int</span></span><br><span class="line"><span class="string">        :type y: int</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        <span class="keyword">return</span> bin(x^y).count(<span class="string">'1'</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="收获-1"><a href="#收获-1" class="headerlink" title="收获"></a>收获</h2><p><code>bin</code> , <code>^</code> , <code>count</code></p>
+          <p>各个算法小实例。<br><a id="more"></a><br><a href="https://www.runoob.com/python3/python3-helloworld.html" title="python Hello World 实例" target="_blank" rel="noopener">Python Hello World 实例</a><br><a href="https://www.runoob.com/python3/python3-if-example.html" target="_blank" rel="noopener">Python if 语句</a></p>
+<p><a href="https://www.runoob.com/python3/python3-check-string.html" target="_blank" rel="noopener">Python 字符串判断</a><br><a href="https://www.runoob.com/python3/python-string-length.html" target="_blank" rel="noopener">Python 判断字符串长度</a><br><a href="https://www.runoob.com/python3/python3-check-is-number.html" target="_blank" rel="noopener">Python 判断字符串是否为数字</a><br><a href="https://www.runoob.com/python3/pyhton-remove-ith-character-from-string.html" target="_blank" rel="noopener">Python 移除字符串中的指定位置字符</a><br><a href="https://www.runoob.com/python3/python-check-substring-present-given-string.html" target="_blank" rel="noopener">Python 判断字符串是否存在子字符串</a><br><a href="https://www.runoob.com/python3/python3-upper-lower.html" target="_blank" rel="noopener">Python 字符串大小写转换</a><br><a href="https://www.runoob.com/python3/python-str-timestamp.html" target="_blank" rel="noopener">Python 将字符串的时间转换为时间戳</a><br><a href="https://www.runoob.com/python3/python-find-url-string.html" target="_blank" rel="noopener">Python 使用正则表达式提取字符串中的 URL</a><br><a href="https://www.runoob.com/python3/python-execute-string-code.html" target="_blank" rel="noopener">Python 将字符串作为代码执行</a><br><a href="https://www.runoob.com/python3/python-string-reverse.html" target="_blank" rel="noopener">Python 字符串翻转</a><br><a href="https://www.runoob.com/python3/python-slicing-rotate-string.html" target="_blank" rel="noopener">Python 对字符串切片及翻转</a></p>
+<p><a href="https://www.runoob.com/python3/python-sum-dictionary.html" target="_blank" rel="noopener">Python 计算字典值之和</a><br><a href="https://www.runoob.com/python3/python-remove-a-key-from-dictionary.html" target="_blank" rel="noopener">Python 移除字典点键值(key/value)对</a><br><a href="https://www.runoob.com/python3/python-merging-two-dictionaries.html" target="_blank" rel="noopener">Python 合并字典</a></p>
+<p><a href="https://www.runoob.com/python3/python-check-element-exists-in-list.html" target="_blank" rel="noopener">Python 判断元素是否在列表中存在</a><br><a href="https://www.runoob.com/python3/python-list-interchange.html" target="_blank" rel="noopener">Python 将列表中的头尾两个元素对调</a><br><a href="https://www.runoob.com/python3/python3-list-swap-two-elements.html" target="_blank" rel="noopener">Python 将列表中的指定位置的两个元素对调</a><br><a href="https://www.runoob.com/python3/python-clear-list.html" target="_blank" rel="noopener">Python 清空列表</a><br><a href="https://www.runoob.com/python3/python-copy-list.html" target="_blank" rel="noopener">Python 复制列表</a><br><a href="https://www.runoob.com/python3/python-reversing-list.html" target="_blank" rel="noopener">Python 翻转列表</a><br><a href="https://www.runoob.com/python3/python-count-occurrences-element-list.html" target="_blank" rel="noopener">Python 计算元素在列表中出现的次数</a><br><a href="https://www.runoob.com/python3/python-sum-list.html" target="_blank" rel="noopener">Python 计算列表元素之和</a><br><a href="https://www.runoob.com/python3/python-multiply-list.html" target="_blank" rel="noopener">Python 计算列表元素之积</a><br><a href="https://www.runoob.com/python3/python-min-list-element.html" target="_blank" rel="noopener">Python 查找列表中最小元素</a><br><a href="https://www.runoob.com/python3/python-max-list-element.html" target="_blank" rel="noopener">Python 查找列表中最大元素</a><br><a href="https://www.runoob.com/python3/python3-list-operator.html" target="_blank" rel="noopener">Python list 常用操作</a></p>
+<p><a href="https://www.runoob.com/python3/python3-sum-array.html" target="_blank" rel="noopener">Python 计算数组元素之和</a><br><a href="https://www.runoob.com/python3/python3-array-rotation.html" target="_blank" rel="noopener">Python 数组翻转指定个数的元素</a></p>
+<p><a href="https://www.runoob.com/python3/python3-leap-year.html" target="_blank" rel="noopener">Python 判断闰年</a><br><a href="https://www.runoob.com/python3/python3-calendar.html" target="_blank" rel="noopener">Python 生成日历</a><br><a href="https://www.runoob.com/python3/python3-get-yesterday.html" target="_blank" rel="noopener">Python 获取昨天日期</a><br><a href="https://www.runoob.com/python3/python-get-dayago.html" target="_blank" rel="noopener">Python 获取几天前的时间</a><br><a href="https://www.runoob.com/python3/python3-month-days.html" target="_blank" rel="noopener">Python 计算每个月天数</a><br><a href="https://www.runoob.com/python3/python-timstamp-str.html" target="_blank" rel="noopener">Python 将时间戳转换为指定格式日期</a></p>
+<p><a href="https://www.runoob.com/python3/python-sort-dictionaries-by-key-or-value.html" target="_blank" rel="noopener">Python 按键(key)或值(value)对字典进行排序</a><br><a href="https://www.runoob.com/python3/python-insertion-sort.html" target="_blank" rel="noopener">Python 插入排序</a><br><a href="https://www.runoob.com/python3/python-quicksort.html" target="_blank" rel="noopener">Python 快速排序</a><br><a href="https://www.runoob.com/python3/python-selection-sort.html" target="_blank" rel="noopener">Python 选择排序</a><br><a href="https://www.runoob.com/python3/python-bubble-sort.html" target="_blank" rel="noopener">Python 冒泡排序</a><br><a href="https://www.runoob.com/python3/python-merge-sort.html" target="_blank" rel="noopener">Python 归并排序</a><br><a href="https://www.runoob.com/python3/python-heap-sort.html" target="_blank" rel="noopener">Python 堆排序</a><br><a href="https://www.runoob.com/python3/python-counting-sort.html" target="_blank" rel="noopener">Python 计数排序</a><br><a href="https://www.runoob.com/python3/python-shellsort.html" target="_blank" rel="noopener">Python 希尔排序</a><br><a href="https://www.runoob.com/python3/python-topological-sorting.html" target="_blank" rel="noopener">Python 拓扑排序</a></p>
+<p><a href="https://www.runoob.com/python3/python-binary-search.html" target="_blank" rel="noopener">Python 二分查找</a><br><a href="https://www.runoob.com/python3/python-linear-search.html" target="_blank" rel="noopener">Python 线性查找</a></p>
+<p><a href="https://www.runoob.com/python3/python3-99-table.html" target="_blank" rel="noopener">Python 九九乘法表</a><br><a href="https://www.runoob.com/python3/python3-square-root.html" title="python Hello World 实例" target="_blank" rel="noopener">Python 平方根</a><br><a href="https://www.runoob.com/python3/python3-quadratic-roots.html" target="_blank" rel="noopener">Python 二次方程</a><br><a href="https://www.runoob.com/python3/python3-factorial.html" target="_blank" rel="noopener">Python 阶乘实例</a></p>
+<p><a href="https://www.runoob.com/python3/python3-largest-number.html" target="_blank" rel="noopener">Python 获取最大值函数</a><br><a href="https://www.runoob.com/python3/python3-hcf.html" target="_blank" rel="noopener">Python 最大公约数算法</a><br><a href="https://www.runoob.com/python3/python3-lcm.html" target="_blank" rel="noopener">Python 最小公倍数算法</a><br><a href="https://www.runoob.com/python3/python3-add-number.html" title="python Hello World 实例" target="_blank" rel="noopener">Python 数字求和</a><br><a href="https://www.runoob.com/python3/python3-fibonacci-sequence.html" target="_blank" rel="noopener">Python 斐波那契数列</a><br><a href="https://www.runoob.com/python3/python3-fibonacci-recursion.html" target="_blank" rel="noopener">Python 使用递归斐波那契数列</a><br><a href="https://www.runoob.com/python3/python3-prime-number.html" target="_blank" rel="noopener">Python 质数判断</a><br><a href="https://www.runoob.com/python3/python3-prime-number-intervals.html" target="_blank" rel="noopener">Python 输出指定范围内的素数</a><br><a href="https://www.runoob.com/python3/python3-odd-even.html" target="_blank" rel="noopener">Python 判断奇数偶数</a><br><a href="https://www.runoob.com/python3/python3-random-number.html" target="_blank" rel="noopener">Python 随机数生成</a><br><a href="https://www.runoob.com/python3/python3-armstrong-number.html" target="_blank" rel="noopener">Python 阿姆斯特朗数</a><br><a href="https://www.runoob.com/python3/python-cube-sum.html" target="_blank" rel="noopener">Python 计算 n 个自然数的立方和</a></p>
+<p><a href="https://www.runoob.com/python3/python3-calculator.html" target="_blank" rel="noopener">Python 简单计算器实现</a><br><a href="https://www.runoob.com/python3/python3-area-of-a-circle.html" target="_blank" rel="noopener">Python 计算圆的面积</a><br><a href="https://www.runoob.com/python3/python3-area-triangle.html" target="_blank" rel="noopener">Python 计算三角形的面积</a></p>
+<p><a href="https://www.runoob.com/python3/python3-celsius-fahrenheit.html" target="_blank" rel="noopener">Python 摄氏温度转华氏温度</a><br><a href="https://www.runoob.com/python3/python3-conversion-binary-octal-hexadecimal.html" target="_blank" rel="noopener">Python 十进制转二进制、八进制、十六进制</a><br><a href="https://www.runoob.com/python3/python3-ascii-character.html" target="_blank" rel="noopener">Python ASCII码与字符相互转换</a><br><a href="https://www.runoob.com/python3/python3-swap-variables.html" target="_blank" rel="noopener">Python 交换变量</a></p>
+<p><a href="https://www.runoob.com/python3/python3-file-io.html" target="_blank" rel="noopener">Python 文件 IO</a><br><a href="https://www.runoob.com/python3/python-joseph-life-dead-game.html" target="_blank" rel="noopener">Python 约瑟夫生者死者小游戏</a><br><a href="https://www.runoob.com/python3/python-five-fish.html" target="_blank" rel="noopener">Python 五人分鱼</a><br><a href="https://www.runoob.com/python3/python-simplestopwatch.html" target="_blank" rel="noopener">Python 实现秒表功能</a><br><a href="https://www.runoob.com/python3/python-your-font.html" target="_blank" rel="noopener">Python 打印自己设计的字体</a></p>
 
         
       </div>
@@ -313,28 +321,28 @@
     
       
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/hamming-distance/">hamming-distance</a></p>
+        <p><span>本文标题:</span><a href="/算法实例/">算法实例</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
-        <p><span>优先级别:</span>8100-01-01</p>
-        <p><span>最后更新:</span>2020-05-02, 00:02</p>
+        <p><span>优先级别:</span>9997-12-29</p>
+        <p><span>最后更新:</span>2020-05-02, 15:33</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/hamming-distance/" title="hamming-distance">https://cjql.github.io/hamming-distance/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/hamming-distance/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/算法实例/" title="算法实例">https://cjql.github.io/算法实例/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/算法实例/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         
             <p>
                 <span>更新历史:</span>
                 <i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/hamming-distance.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>                
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/算法实例.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>                
                 <i class="fa fa-check-square-o"></i>
-                <a href="https://github.com/cjql/blog/edit/master/source/_posts/hamming-distance.md" title="直接在线编辑" target="_blank">Edit</a>
+                <a href="https://github.com/cjql/blog/edit/master/source/_posts/算法实例.md" title="直接在线编辑" target="_blank">Edit</a>
                 <i class="fa fa-github-alt"></i>
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/hamming-distance.md" title="查看文章有关更新记录" target="_blank">History</a>
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/算法实例.md" title="查看文章有关更新记录" target="_blank">History</a>
                 <i class="fa fa-file-text-o"></i>	
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/hamming-distance.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank">mdRaw</a>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/算法实例.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank">mdRaw</a>
                 <i class="fa fa-file-movie-o"></i>
-                <a href="https://github.com/cjql/blog/blob/master/source/_posts/hamming-distance.md" title="GitHub查看" target="_blank">NormalView</a>
+                <a href="https://github.com/cjql/blog/blob/master/source/_posts/算法实例.md" title="GitHub查看" target="_blank">NormalView</a>
             </p>
         
         <p>
@@ -346,15 +354,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/array-partition-i/">
-                    array-partition-i
+                <a href="/知识整理术语表/">
+                    知识整理术语表
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/n-ary-tree-postorder-traversal/">
-                    n-ary-tree-postorder-traversal
+                <a href="/输入输出系统/">
+                    计算机组成原理_输入输出系统
                 </a>
             </div>
         
@@ -371,7 +379,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#收获"><span class="toc-text">收获</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#收获-1"><span class="toc-text">收获</span></a></li></ol>
+            
         
     </div>
     <style>
@@ -402,7 +410,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/array-partition-i/" title="上一篇: array-partition-i">
+            <a href="/知识整理术语表/" title="上一篇: 知识整理术语表">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -410,7 +418,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/n-ary-tree-postorder-traversal/" title="下一篇: n-ary-tree-postorder-traversal">
+            <a href="/输入输出系统/" title="下一篇: 计算机组成原理_输入输出系统">
                 <i class="fa fa-angle-right"></i>
             </a>
         

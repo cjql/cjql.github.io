@@ -18,18 +18,17 @@
 
 
 
-<meta name="description" content="汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。hamming-distance 英文 中文 收获bin , ^ , count">
-<meta name="keywords" content="计算机,算法,LeetCode">
+<meta name="description" content="每日英语A useful minimum set of commandsEveryday Git SYNOPSIS20 Commands Or So can broadly be grouped into four categoriesa small set of useful command crash coursedaemon #">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hamming-distance">
-<meta property="og:url" content="https://cjql.github.io/hamming-distance/index.html">
+<meta property="og:title" content="20200502">
+<meta property="og:url" content="https://cjql.github.io/20200502/index.html">
 <meta property="og:site_name" content="CJ">
-<meta property="og:description" content="汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。hamming-distance 英文 中文 收获bin , ^ , count">
+<meta property="og:description" content="每日英语A useful minimum set of commandsEveryday Git SYNOPSIS20 Commands Or So can broadly be grouped into four categoriesa small set of useful command crash coursedaemon #">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-05-01T16:02:08.622Z">
+<meta property="og:updated_time" content="2020-05-02T07:59:51.471Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hamming-distance">
-<meta name="twitter:description" content="汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。hamming-distance 英文 中文 收获bin , ^ , count">
+<meta name="twitter:title" content="20200502">
+<meta name="twitter:description" content="每日英语A useful minimum set of commandsEveryday Git SYNOPSIS20 Commands Or So can broadly be grouped into four categoriesa small set of useful command crash coursedaemon #">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -61,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>hamming-distance | CJ</title>
+<title>20200502 | CJ</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -259,11 +258,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-hamming-distance" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-20200502" class="article article-type-post" itemscope="" itemprop="blogPost">
     
       <div class="article-meta">
-        <a href="/hamming-distance/" class="article-date">
-      <time datetime="8099-12-31T16:00:00.000Z" itemprop="datePublished">8100-01-01</time>
+        <a href="/20200502/" class="article-date">
+      <time datetime="2020-05-02T07:58:59.000Z" itemprop="datePublished">2020-05-02</time>
 </a>
 
 
@@ -278,7 +277,7 @@
           
   
     <h1 class="article-title" itemprop="name">
-      hamming-distance
+      20200502
     </h1>
   
 
@@ -288,10 +287,6 @@
           
 
           
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
-    </div>
-
           <div class="clearfix"></div>
         </div>
         
@@ -300,11 +295,11 @@
         
         
             
-          <p>汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。<br>hamming-distance <a href="https://leetcode.com/problems/hamming-distance/" target="_blank" rel="noopener">英文</a> <a href="https://leetcode-cn.com/problems/hamming-distance/" target="_blank" rel="noopener">中文</a></p>
-<h2 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h2><p><code>bin</code> , <code>^</code> , <code>count</code><br><a id="more"></a></p>
-<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">hammingDistance</span><span class="params">(self, x, y)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type x: int</span></span><br><span class="line"><span class="string">        :type y: int</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        <span class="keyword">return</span> bin(x^y).count(<span class="string">'1'</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="收获-1"><a href="#收获-1" class="headerlink" title="收获"></a>收获</h2><p><code>bin</code> , <code>^</code> , <code>count</code></p>
+          <h1 id="每日英语"><a href="#每日英语" class="headerlink" title="每日英语"></a>每日英语</h1><p>A useful minimum set of commands<br>Everyday Git</p>
+<p>SYNOPSIS<br>20 Commands Or So</p>
+<p>can broadly be grouped into four categories<br>a small set of useful command</p>
+<p>crash course<br>daemon</p>
+<p># </p>
 
         
       </div>
@@ -313,28 +308,28 @@
     
       
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/hamming-distance/">hamming-distance</a></p>
+        <p><span>本文标题:</span><a href="/20200502/">20200502</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 CJ 的个人博客">CJ</a></p>
-        <p><span>优先级别:</span>8100-01-01</p>
-        <p><span>最后更新:</span>2020-05-02, 00:02</p>
+        <p><span>优先级别:</span>2020-05-02</p>
+        <p><span>最后更新:</span>2020-05-02, 15:59</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/hamming-distance/" title="hamming-distance">https://cjql.github.io/hamming-distance/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/hamming-distance/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/20200502/" title="20200502">https://cjql.github.io/20200502/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://cjql.github.io/20200502/　　作者: CJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         
             <p>
                 <span>更新历史:</span>
                 <i class="fa fa-github"></i>
-                <a href="https://github.com/cjql/blog/blame/master/source/_posts/hamming-distance.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>                
+                <a href="https://github.com/cjql/blog/blame/master/source/_posts/20200502.md" title="顺序查看文章各部分修改记录" target="_blank">Blame</a>                
                 <i class="fa fa-check-square-o"></i>
-                <a href="https://github.com/cjql/blog/edit/master/source/_posts/hamming-distance.md" title="直接在线编辑" target="_blank">Edit</a>
+                <a href="https://github.com/cjql/blog/edit/master/source/_posts/20200502.md" title="直接在线编辑" target="_blank">Edit</a>
                 <i class="fa fa-github-alt"></i>
-                <a href="https://github.com/cjql/blog/commits/master/source/_posts/hamming-distance.md" title="查看文章有关更新记录" target="_blank">History</a>
+                <a href="https://github.com/cjql/blog/commits/master/source/_posts/20200502.md" title="查看文章有关更新记录" target="_blank">History</a>
                 <i class="fa fa-file-text-o"></i>	
-                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/hamming-distance.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank">mdRaw</a>
+                <a href="https://raw.githubusercontent.com/cjql/blog/master/source/_posts/20200502.md" title="查看 & 下载文章 Markdown 原始文本" target="_blank">mdRaw</a>
                 <i class="fa fa-file-movie-o"></i>
-                <a href="https://github.com/cjql/blog/blob/master/source/_posts/hamming-distance.md" title="GitHub查看" target="_blank">NormalView</a>
+                <a href="https://github.com/cjql/blog/blob/master/source/_posts/20200502.md" title="GitHub查看" target="_blank">NormalView</a>
             </p>
         
         <p>
@@ -346,17 +341,11 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/array-partition-i/">
-                    array-partition-i
+                <a href="/Docker/">
+                    Docker
                 </a>
             </div>
         
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/n-ary-tree-postorder-traversal/">
-                    n-ary-tree-postorder-traversal
-                </a>
-            </div>
         
     </nav>
 
@@ -371,7 +360,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#收获"><span class="toc-text">收获</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#收获-1"><span class="toc-text">收获</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#每日英语"><span class="toc-text">每日英语</span></a></li></ol>
         
     </div>
     <style>
@@ -402,7 +391,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/array-partition-i/" title="上一篇: array-partition-i">
+            <a href="/Docker/" title="上一篇: Docker">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -410,9 +399,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/n-ary-tree-postorder-traversal/" title="下一篇: n-ary-tree-postorder-traversal">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
 
